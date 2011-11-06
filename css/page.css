@@ -1,0 +1,571 @@
+/* $Id: page.css 126 2011-11-05 19:45:14Z giang $ */
+
+/**
+ * @file page.css
+ * This stylesheet provides the page main styles for this theme.
+ */
+
+/**
+ * Remove unused styles for performace.
+ */
+#sidebar-menus{float:left;}
+
+/**********************************************************
+ *              Section, Page and Body Classes
+ **********************************************************/
+/**
+ * Normally you will use these in combination with other
+ * selectors. I include them here for completedness.
+ */
+
+#container{position:relative;margin:0 auto;}
+#columns{display:inline-block;margin-bottom:1em;}
+#container > #columns{display:block;}
+#content-column,#sidebar-left,#sidebar-right{float:left;}
+#content-column{width:100%;margin-bottom:1em;}
+.clear,#nav,#columns,#breadcrumb,#content-bottom,#secondary-content,#tertiary-content,#footer-wrapper,#footer,#footer-message{clear:both;}
+
+
+#genesis-1c .sidebar-left .content-inner{}
+#genesis-1c .sidebar-right .content-inner{margin-right:200px;}
+#genesis-1c .two-sidebars .content-inner{margin:0 200px 0 140px;}
+#genesis-1c .two-sidebars #header .content-inner {margin:0 0 0 140px;}
+#genesis-1c #sidebar-menus {width:120px;margin-left:-100%;line-height:1em;padding-bottom: 30px;}
+#genesis-1c #sidebar-left{}
+#genesis-1c #sidebar-right {width:180px;margin-left:-180px;}
+#genesis-1c .content-inner.top-panel {margin:0 0 0 140px;clear: both;}
+
+.gpanel{clear:both;margin:.75em 0;}
+.gpanel .region{display:inline;position:relative;}
+.two-col-50 .region{width:49.5%;}
+.two-col-50 .col-1{float:left;}
+.two-col-50 .col-2{float:right;}
+.two-col-50 .gpanel{margin:0;}
+#two-col-50-nested .col-2{width:48.5%;}
+.col-1 #two-col-50-nested .region,.col-2 #two-col-50-nested .col-2{width:49%;}
+.three-col-33 .region{float:left;width:32%;}
+.three-col-33 .col-2{right:-1%;width:34%;}
+.three-col-33 .col-3{right:-2%;}
+.four-col-25 .section-1{float:left;width:49.5%;}
+.four-col-25 .section-2{float:right;width:49.5%;}
+.four-col-25 .col-1,.four-col-25 .col-3{float:left;width:49%;}
+.four-col-25 .col-2,.four-col-25 .col-4{float:right;width:49%;}
+.gpanel .region .inner{margin:0;}
+.gpanel .last .inner{margin-right:0;}
+
+/**********************************************************
+ *                  The wrapper divs
+ *    Be careful how you modify these, see layout.css
+ **********************************************************/
+/**
+ * Width Setting
+ *
+ * Genesis supports Elastic, Fluid and Fixed width values.
+ * Elastic layouts are dynamic and will expand or contract when
+ * the font size is changed. Fluid widths change when the browser
+ * is resized and fixed width layouts stay the same width even
+ * when the broswer is resized or the font size is changed.
+ *
+ * Elastic layouts use ems,       e.g. 80em
+ * Fluid layouts use percentages, e.g. 85%
+ * Fixed widths use pixels,       e.g. 960px
+ */
+#container {
+  width: 100%;     /* Width for IE6 */
+}
+body > #container {
+  width: 100%;      /* Width for all other browsers */
+  max-width: 100%; /* set a maximum width */
+  min-width: 500px; /* set a minimum width */
+}
+
+#header > #columns {
+  display:block;
+}
+
+/* Column wrappers */
+#columns {margin-bottom:0;background:url(1px.png) repeat-y 0 50%; width: 100%;}
+.columns-inner {}
+
+/* Content wrappers */
+#content-column {margin-bottom: 0; padding-top: 0;}
+.content-inner {margin:0 0 0 140px;}
+
+/* Main content wrappers*/
+.sidebar-right #main-content {width: 100%;}
+.two-sidebars #main-content {width: 100%; float: right;}
+#content {padding-top: 1em;}
+
+
+/**********************************************************
+ *                      Sidebars
+ **********************************************************/
+/* Target both sidebars with this low specifity selector. */
+.sidebar {}
+.sidebar a:link    {}
+.sidebar a:visited {}
+.sidebar a:hover   {}
+.sidebar a:focus   {}
+.sidebar a:active  {}
+
+.sidebar-inner {}
+
+/* Target a specific sidebar, inner or sidebar-inner. */
+#sidebar-menus {}
+#sidebar-menus .sidebar-inner {}
+
+#sidebar-right {}
+#sidebar-right .sidebar-inner {}
+
+/*********************************************************
+*                     GPanel Regions
+**********************************************************/
+.two-col-50 {}
+.two-col-50 .col-1 {}
+.two-col-50 .col-2 {}
+
+.two-col-50.with-nested {}
+#two-col-50-nested {}
+.two-col-50.with-nested .col-1 {}
+.two-col-50.with-nested .col-2 {}
+.two-col-50.with-nested #two-col-50-nested .col-1 {}
+.two-col-50.with-nested #two-col-50-nested .col-2 {}
+
+.three-col-33 {}
+.three-col-33 .col-1 {}
+.three-col-33 .col-2 {}
+.three-col-33 .col-3 {}
+
+.four-col-25 {background-color: #292929; padding: 0; margin: 0;}
+.four-col-25 .col-1 {}
+.four-col-25 .col-2 {}
+.four-col-25 .col-3 {}
+.four-col-25 .col-4 {}
+
+
+.gpanel-region {padding-left: 20px; background-color: #292929;}
+
+/**********************************************************
+ *                 Header Elements
+ **********************************************************/
+/* #header wraps #branding, #search-box-top and #header-blocks. */
+#header {}
+#branding {margin: 0 0 0 140px;}
+
+/* Logo and site_name wrapper. */
+.logo-site-name {text-align:right;}
+div.logo-site-name {}
+h1.logo-site-name  {line-height:25px; margin-right:25px;font-size: 2.5em;}
+h1.logo-site-name a, .logo-site-name .title {background: #292929;color:#A7D4FF;padding: 0 5px;}
+h1.logo-site-name a:hover, a:active {}
+/* DIV/strong combo when when title is set. */
+div.logo-site-name strong {}
+
+.h2panel h1 {line-height: 1em;}
+.h2panel h1.logo-site-name  {background: #292929; margin: 0 0 0 -1px;text-align: left;font-size: 1em;}
+.h2panel h1.logo-site-name a {padding: 0; letter-spacing: -1px;font-size: 1em;}
+
+/* Remove display:block if you want the site name inline with the logo. */
+.logo-site-name span {
+}
+
+/* Logo. */
+#logo {padding-bottom: 1em;}
+.h2panel #logo {float:right;padding-right: 1em;}
+
+/* Override default pseudo class styles. */
+#site-name a:link    {}
+#site-name a:visited {}
+#site-name a:hover   {}
+#site-name a:focus   {}
+#site-name a:active  {}
+
+/* Site slogan. */
+#site-slogan {
+  text-transform: uppercase;
+  padding-bottom: 1em;
+  font-weight: normal;
+  font-size: 10px;
+}
+
+
+/**********************************************************
+ *    Search box, Advanced search form, Search results
+ *          For the search block see blocks.css
+ **********************************************************/
+/**
+ * Search box
+ */
+#search-box {
+  text-align:right;
+  clear: both;
+}
+
+/* Reset form element margins. */
+#search-theme-form {
+  margin: 1.5em 0;
+}
+
+/**
+ * Advanced search form
+ */
+/* Advanced search-form id. */
+#search-form {}
+
+/* Use the child selector because the inner div has no class. */
+#search-form > div {}
+#search-form .container-inline {display:inline;}
+#search-form #edit-keys-wrapper {float:left;padding:0 10px 0 0;margin:0}
+
+#search-form label {}
+#search-form input {text-transform: uppercase;}
+#search-form .form-item {}
+#search-form .form-submit {}
+
+/* Override forms.css text field focus style. */
+#search-form #edit-keys-wrapper input:hover,
+#search-form #edit-keys-wrapper input:focus {}
+
+/* Advanced search fieldset. */
+fieldset #search-advanced {}
+
+/**********************************************************
+ *               Primary & Secondary Links
+ **********************************************************/
+/**
+ * Implimentation of Primary and Secondary Links.
+ *
+ * Primary & Secondary Links are colored by default so you
+ * can easily identify them.
+ */
+
+/**
+ * #nav is the containing div for Primary & Secondary Links.
+ */
+#nav {
+  margin: 0.75em 0;
+}
+
+/**
+ * Primary Links Positioning
+ */
+/* FLOAT PRIMARY RIGHT */
+/* #primary .primary-inner {float: right;} */
+/* ALIGN PRIMARY CENTER */
+/* #primary .primary-inner {display: table; margin: 0 auto; text-align: center;} */
+
+/**
+ * Primary Links Style
+ * Example styles to get you started.
+ */
+#primary {}
+
+#nav .primary-links {
+  background: #222; /* Default gray for dev only. */
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+
+/* Modify the margin to set tab spacings. */
+#nav .primary-links li {
+  display: inline;
+  line-height: 2;
+  list-style: none;
+  margin: 0 1em;
+  padding: 0;
+}
+
+#nav .primary-links li a {
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+/**
+ * Secondary Links Positioning
+ */
+/* FLOAT SECONDARY RIGHT */
+/* #secondary .secondary-inner {float: right;} */
+/* ALIGN SECONDARY CENTER */
+/* #secondary .secondary-inner {display: table; margin: 0 auto; text-align: center;} */
+
+/**
+ * Secondary Links Style
+ */
+#secondary {}
+
+#nav .secondary-links {
+  background: #333; /* Default gray for dev only. */
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+
+/* Modify the margin to set tab spacings. */
+#nav .secondary-links li {
+  display: inline;
+  line-height: 2;
+  list-style: none;
+  margin: 0 1em;
+  padding: 0;
+}
+
+#nav .secondary-links li a {
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+/**********************************************************
+ *                      Breadcrumb
+ **********************************************************/
+/**
+ * Genesis places the breadcrumb directly below the header,
+ * giving it the full width of theme to expand into.
+ * You can eaisly drag the breadcrumb html to the main
+ * content column if you need to.
+ */
+#breadcrumb {
+  color: #777;
+}
+
+
+/**********************************************************
+ *                       Mission
+ **********************************************************/
+#mission {
+  font-weight: bold;
+  margin: 0 0 1.5em;
+}
+
+
+/**********************************************************
+ *                    Page Title
+ **********************************************************/
+/* The main title on each page. */
+h1#page-title {}
+
+#page-title {background:#A7D4FF;line-height: .8em;margin-bottom:1em; padding-left: 1.5em;}
+#page-title h2 {display:inline;background: #292929;line-height: .85em;padding: 0 5px;}
+
+.section-customerror #page-title{background:red;}
+.section-customerror #page-title h2 {color:red};
+.section-customerror #content {color:red}
+
+/**********************************************************
+ *                     Pager
+ **********************************************************/
+/* The first 2 classes provide the base pager styles. */
+.item-list ul.pager    {background-color: #333;}
+.item-list ul.pager li {
+  margin: 0;
+}
+
+/**********************************************************
+ *               Footer, Footer Message
+ **********************************************************/
+#foot-wrapper {}
+
+#footer {}
+#footer .region-inner {float: right;}
+
+#footer-message {float: right;}
+
+#footer a,
+#footer-message a {}
+
+
+/**********************************************************
+ *                 RSS Feed Icon
+ **********************************************************/
+.feed-icon {}
+.feed-icon img {
+  float:left;
+  padding-left: 1em;
+}
+#footer-message a.feed-icon {}
+
+
+/**********************************************************
+ *                       Blocks
+ **********************************************************/
+.block-apachesolr .block-inner {
+  font-size: .8em;
+}
+
+
+#content .block-title {
+background:none;
+color:#A7D4FF;
+padding:0;
+margin-bottom:.5em;
+}
+
+/**********************************************************
+ *                    customerror
+ **********************************************************/
+
+.section-customerror #page-title{background:#F5173C;}
+.section-customerror #page-title h2 {color:#F5173C;}
+.section-customerror #content {color:#F5173C;text-transform:uppercase;}
+.section-customerror .lbow-topleft-bar, .section-customerror .lbow-bottomleft-bar, .section-customerror .lbow-topleft-positiv, .section-customerror .lbow-bottomleft-positiv {background-color:#F5173C;}
+.section-customerror #sidebar-menus {background-color:#F5173C !important;}
+.section-customerror #sidebar-menus ul.menu li a:visited {background-color:#F5173C;}
+
+
+/**********************************************************
+ *                    center table
+ **********************************************************/
+ 
+table.center {
+  height:97%;
+  width:100%;
+}
+
+td.center {
+  vertical-align: middle;
+}
+
+.section-user td, .section-user th, .section-user tr {
+  border-bottom: 0;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: .9em;
+}
+
+td.top {vertical-align: top;}
+td.bottom {vertical-align: bottom;}
+td.ibar-height {height: 25px;}
+td.sidebar-first {}
+
+.section-bars .content-inner {margin:0;}
+
+.section-user .account-management .content-inner {margin:0;}
+.section-user .account-management div.logo-site-name,
+.section-user .account-management h1.logo-site-name  {font-size: 3em; text-align: center; margin: 0 0 .5em 0;}
+.section-user .account-management .logo-site-name span {
+  text-transform: uppercase;
+  margin: .5em 0;
+}
+
+.section-user form#user-login {
+  width: 230px;
+  margin: 0 auto 1em;
+  padding: 1em;
+  background: #333;
+  border-radius:5ex;
+  -webkit-border-radius: 5ex;
+  -moz-border-radius: 5ex;
+}
+
+.section-user .account-management input.form-text, .section-user textarea {
+  text-align: center;
+  border-radius:15ex;
+  -webkit-border-radius: 15ex;
+  -moz-border-radius: 15ex;
+}
+
+/**********************************************************
+ *      LCARS Interface bars, bends and brackets
+ **********************************************************/
+
+/* simple top and bottom bar */
+
+.ibar1 {
+  background-color: #A7D4FF;
+  padding: .5em;
+  height: 25px;
+  border-radius:3ex;
+  -webkit-border-radius:3ex;
+  -moz-border-radius:3ex;
+}
+
+/* lbow-topleft */
+
+.lbow-topleft-positiv {
+  display: block;
+  background-color: #A7D4FF;
+  padding: 0 0 0 120px;
+  margin: 4px 0;
+  border-radius:39px 0 0 0;
+  -webkit-border-top-left-radius: 39px;
+  -moz-border-radius-topleft: 39px;
+}
+
+.lbow-topleft-negativ {
+  display: block;
+  width: auto;
+  height: 40px;
+  background-color: #292929;
+  border-radius:20px 0 0 0;
+  -webkit-border-top-left-radius: 20px;
+  -moz-border-radius-topleft: 20px;
+}
+
+.lbow-content {padding: 10px 0 10px 20px;text-transform: uppercase;font-size: 10px;}
+
+.lbow-topleft-bar {
+  height: 2em;
+  text-align: right;
+}
+
+.h2panel .lbow-topleft-bar {
+  height: 15px;
+  text-align: right;
+}
+
+/* lbow-bottomleft */
+
+.lbow-bottomleft-positiv {
+  display: block;
+  width: auto;
+  height: auto;
+  background-color: #A7D4FF;
+  padding: 0 0 0 120px;
+  margin: 4px 0;
+  border-radius:0 0 0 39px;
+  -webkit-border-bottom-left-radius: 39px;
+  -moz-border-radius-bottomleft: 39px;
+}
+
+.lbow-bottomleft-negativ {
+  display: block;
+  width: auto;
+  height: 40px;
+  background-color: #292929;
+  border-radius:0 0 0 20px;
+  -webkit-border-bottom-left-radius: 20px;
+  -moz-border-radius-bottomleft: 20px;
+}
+
+.lbow-bottomleft-bar  {
+  height: 25px;
+}
+
+.h2panel .lbow-bottomleft-bar  {
+  height: 15px;
+}
+
+.messages {
+  border-radius:3ex;
+  -webkit-border-radius:3ex;
+  -moz-border-radius:3ex;
+  padding: 1em !important;
+  margin-bottom: .5em;
+}
+
+div.codeblock {
+  border: 0px;
+  background-color: #333;
+  font-size: .8em;
+}
+
+span.admin-disabled {
+  color: red;
+}
+
+span.admin-enabled {
+  color: green;
+}
+
+

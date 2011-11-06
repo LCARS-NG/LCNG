@@ -1,0 +1,1360 @@
+/* LCNG a LCARS-NG Theme by G. Nguyen */
+/* based on Genesis Starter Theme */
+
+html, body {
+  font-size:85%;
+  height:99%;
+
+}
+
+/**********************************************************
+ *                    Body
+ **********************************************************/
+body {
+  background: #292929;
+  font-family:  'Droid Sans', Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 10px 10px 0;
+  color: #CCC;
+  border: none;
+  line-height: 1.5em;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+/**********************************************************
+ *                   Customn scrollbar
+ **********************************************************/
+
+::-webkit-scrollbar {
+width: 10px;
+height: 10px;
+overflow: visible;
+}
+
+::-webkit-scrollbar-track-piece  {
+background-color: #000;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+height: 50px;
+background-color: #999;
+}
+
+::-webkit-scrollbar-thumb:hover {
+background-color: #666;
+}
+
+::-webkit-scrollbar-thumb:active {
+background-color: #A7D4FF;
+}
+
+::-webkit-scrollbar-button {
+height: 0;
+width: 0;
+}
+
+/**********************************************************
+ *                 HTML Elements
+ **********************************************************/
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight:normal;
+  text-transform: uppercase;
+  color: #A7D4FF;
+  padding:0;
+  margin:0;
+  line-height: 1.25em;
+  font-size: 1em;
+}
+
+h1 {
+  font-style: normal;
+  font-weight: bold;
+}
+h2 {font-size: 2em;}
+
+p {margin: 0 0 .5em;}
+
+dd {text-transform: uppercase;}
+
+pre, code, tt {}
+p code {}
+
+
+/**********************************************************
+ *                 Global Link Styles
+ **********************************************************/
+a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  outline: none;
+  outline-style: none;
+}
+
+a:link    {color: #4BB0FF;}
+a:visited {color: #4BB0FF;}
+a:hover   {color: #A7D4FF;}
+
+/* Set global a:focus styles. */
+a:focus {
+  color: white;
+  outline: none;
+}
+
+/* Drupal sets this to black. */
+li a.active {
+  color: #A7D4FF;
+}
+
+/* Remove borders on linked images. */
+a img {
+  border: none;
+}
+
+/**********************************************************
+ *                 Accessibility Classes
+ **********************************************************/
+
+/* Hide content without positioning issues. */
+.invisible {
+  height: 0;
+  overflow: hidden;
+}
+
+/* Move content off screen where appropriate. */
+.offscreen {
+  position: absolute;
+  left: -999em;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+/* Completely remove content for all users.
+   DO NOT use this for Skip links, display:none
+   hides content from screen readers! 
+.remove {
+  display: none;
+}
+*/
+
+
+/**********************************************************
+ *                 Custom Styles
+ **********************************************************/
+/**
+ * Here you can add custom stles for your theme that do not fit
+ * into one if the modular stylesheets (such as the nodes, blocks,
+ * page and comments stylesheets).
+ */
+
+#node-navigation {float: right; display: block; text-align: right;}
+ul#node-navigation {list-style-type: none;}
+
+td.revision-current {background: #444;}
+
+.simileAjax-bubble-contentContainer {background: black !important; padding: 5px !important;}
+
+li.blog_usernames_blog {display: none !important;}
+
+#attachments {background: #333;width:100%;}
+
+.views-field-image-image a img, .image-gallery-view-cover-thumbnail img { border: .5em solid #EEE; padding: 0;}
+
+.statistics_counter {text-transform: uppercase;}
+
+li {padding-bottom: .25em;line-height: 1.25em;}
+
+/**********************************************************
+ *                          Forms
+ **********************************************************/
+.form-submit, .form-button {
+  cursor:pointer;
+  background:#3786FF;
+  border: none;
+  color:black;
+  font-size:.85em;
+  font-weight:bold;
+  padding: 5px 10px;
+  margin:0 0 5px;
+  height: auto;
+  width: auto;
+  text-transform: uppercase;
+  -moz-border-radius: 10px;
+  border-radius: 10px 10px;
+}
+
+.submitButton, .form-button-cancel {
+  margin-right:0.5em;
+  display: inline;
+}
+
+a.form-submit:link, a.form-submit:active, a.form-submit:visited, a.form-submit:hover {
+  color: black ;
+}
+
+a.form-button:link, a.form-button:active, a.form-button:visited, a.form-button:hover {
+  color: black ;
+}
+
+.form-item label {
+  text-transform:uppercase;
+  color: #A7D4FF;
+}
+
+caption, th, td {
+  text-align: left;
+}
+
+#edit-submit-button {
+  background:none;
+  position: relative;
+  top: 6px;
+  margin: 0 0 0 5px;
+}
+
+.search-advanced .action {
+}
+
+.search-advanced {
+  clear:left;
+}
+
+.item-list ul, .item-list ol {
+  margin:0;
+  padding:0;
+}
+
+.item-list ul li {
+  line-height: 1.15em;
+  list-style-image: none;
+  list-style-position: outside;
+  list-style-type: none;
+  margin: 0;
+  padding: 0 0 0.5em;
+}
+
+.image-attach-body {
+  float: right;
+  margin-left: 1em;
+}
+
+/**
+* Custom user profile form layout.
+*/
+
+#user-profile-form {
+}
+
+#user-profile-form legend {
+  font-size: 1.2em;
+}
+
+#user-profile-form .form-column-1,
+#user-profile-form .form-column-2 {
+  float: left;
+  width: 48%;
+}
+
+#user-profile-form .form-column-1 {
+  margin: 0 1% 0 0;
+}
+
+.submit-user-profile {
+  clear: left;
+  padding-top: 1em;
+}
+
+html.js fieldset.collapsed {
+  padding-bottom: .5em;
+  padding-top: 0;
+}
+
+#user-profile-about {float: left;}
+#user-profile-about ul {margin: 0;}
+
+/**********************************************************
+ *                          Views
+ **********************************************************/
+
+.attachment-after {padding-bottom:1em;}
+
+#views-ajax-pad .message, #views-ajax-title {
+  color:#CCCCCC;
+}
+
+#views-ajax-pad form {
+  color: #CCC;
+}
+
+.form-item input.error, .form-item textarea.error, .form-item select.error {
+  background-color: #F5173C;
+  border: 1px solid #F5173C;
+}
+
+div.views-fluid-grid h3 {
+  text-align:left;
+}
+
+#views-ui-edit-view-form {
+  margin:1em 0 0 117px;
+  padding:0;
+}
+
+/**********************************************************
+ *                          User
+ **********************************************************/
+.profile {
+  margin:2em 0;
+  text-transform: uppercase;
+  color: #A7D4FF;
+}
+
+.profile h3 {
+  border:none;
+}
+
+.profile .fields {
+  margin-bottom: .5em;
+}
+
+.user-picture {
+  float:left;
+  margin-right:1em;
+  }
+
+.profile .picture {
+  float:left;
+  }
+
+.profile ul {
+  list-style-type:none;
+  margin: 0;
+}
+
+.profile ul li {
+  margin: 0;
+  padding: 0 0 0.25em 0;
+}
+
+#user-login .description, #user-login .form-required {
+  display: none;
+}
+
+.profile .views-field-title {font-weight: bold; padding-top: .5em;}
+
+#user-login-form {
+  text-align:left;
+}
+
+/**********************************************************
+ *                    Main-Content
+ **********************************************************/
+
+#main-content {min-width: 250px;}
+.section-node h2{line-height:1em;}
+
+.local-tasks {
+  border-top: solid #A7D4FF;
+  margin-bottom: 1em;
+  padding: 1em 0;
+  clear: both;
+}
+
+.local-tasks li {list-style-type: none;}
+
+.help fieldset {background: #027AC6;border: 1px solid white;}
+
+.resizable-textarea {
+}
+
+html.js .resizable-textarea textarea {
+ width:97%;
+ padding-top: 1em;
+}
+
+.section-search .box {
+  clear:left;
+}
+
+#page-title h2 {color: #A7D4FF;}
+
+#system-charts {
+  background: white;
+}
+
+html.js fieldset.collapsible .fieldset-wrapper {
+  overflow: hidden;
+}
+
+#footer {padding: 0 1em;}
+
+/**********************************************************
+ *       Blockframes with rounded corners
+ **********************************************************/
+
+.ceilingTop {
+  background-color: #A7D4FF;
+  display:block;
+  height:auto;
+  padding: 25px 0 0 5px;
+  -webkit-border-top-left-radius: 29px;
+  -moz-border-radius-topleft: 29px;
+}
+
+.innerframeTop {
+  background-color: #292929;
+  display:block;
+  height:auto;
+  padding:20px 0 0px 10px;
+  -webkit-border-top-left-radius: 20px;
+  -moz-border-radius-topleft: 20px;
+}
+
+/**********************************************************
+ *                      Images
+ **********************************************************/
+
+.image-attach-teaser {
+  float:right;
+  margin-left:1em;
+}
+
+/**********************************************************
+ *                  Custom blocks
+ **********************************************************/
+.block-taxonomy_filter .selected {
+  color:#FF9C00;
+}
+
+/**********************************************************
+ *                      Nodes
+ **********************************************************/
+.node {
+  padding: 1em;
+  clear: left;
+  background: #333;
+  margin-bottom: 1em;
+  -webkit-border-radius: 1ex;
+  -moz-border-radius: 1ex;
+}
+
+/* Inner wrapper div for nodes. */
+.node-inner {}
+
+/* Node title on teasers and other lists. */
+.node-title {font-size: 2em;}
+
+.node-title a:link,
+.node-title a:visited,
+.node-title a:active {
+  padding-right: .3em;
+  text-decoration: none;
+}
+
+.node-title a:hover {
+}
+
+/* Node content wrapper. */
+.node-content {font-size: 1em; width: 100%;padding-bottom: .5em;}
+.node-type-sheetnode .node-content, .page-node-edit .resizable-textarea {width: 100%;}
+.page-node-add .resizable-textarea {width: 99.5%;}
+
+/* User Picture. */
+.node .user-picture {}
+.node .user-picture img {}
+
+/* Submitted */
+.node-submitted {text-transform: uppercase;padding-bottom: 1em;}
+.node-submitted a {}
+.node-submitted a:hover {}
+
+/* Common links classes. */
+.node ul.links {}
+.node ul.links li {padding: 0 1em 0 0;}
+.node ul.links li a {}
+
+/* Links. */
+.node-links {clear: both; text-transform: uppercase;}
+.node-links ul.links {display: block; padding-top: .3em;}
+.node-links ul.links li  {}
+.node-links ul.links li a {}
+
+/* Taxonomy terms. */
+.node-terms {float: right;}
+.node-terms ul.tags {font-size: x-small;}
+.node-terms ul.tags li {display: block; text-align: right; padding: 0;}
+.node-terms ul.tags li a {}
+
+/**********************************************************
+ *                      Forms
+ **********************************************************/
+
+.node-form .form-text {
+  width: 97%;
+}
+
+#field_reference_values .form-text {
+  width: 90%;
+}
+
+.node-form .admin {
+  padding-bottom: 1em;
+}
+
+.content-add-more {padding-bottom: 1em;}
+
+/**********************************************************
+ *                     Comments
+ **********************************************************/
+/* Comment wrapper */
+#comments {}
+#comments-title {}
+
+.comment {
+  margin: 0 0 1em;
+}
+
+/* Inner wrapper div for comments. */
+.comment-inner {}
+
+.comment .indented {
+  margin-left: 2em; /* LTR */
+}
+
+/* The title of each comment. */
+.comment-title {}
+
+.comment-id {}
+.comment-title .new {
+  color: #FF8000;
+}
+
+.comment-title a:link,
+.comment-title a:visited,
+.comment-title a:active {
+  text-decoration: none;
+}
+
+.comment-title a:hover {
+  text-decoration: underline;
+}
+
+/* Comment content wrapper. */
+.comment-content {padding-top: 1em;}
+
+/* Comment links. */
+.comment-links {}
+.comment-links ul.links {
+  display: block;
+  padding: 0 1em 0 0;
+  text-align: right; /* LTR */
+}
+
+/***********************************************************
+ *                    Tables
+ **********************************************************/
+
+table {margin: 0;}
+
+thead th     {
+  border-color: #444;
+  color: #CCC;
+  background-color: #333333;
+}
+
+td, th {
+  border-bottom:none;
+}
+
+tbody {
+  border-top:none;
+  background-color: #292929;
+}
+
+tr.even,
+tr.odd,
+tbody th {
+  border: 0 #000;
+}
+
+tr.odd,
+tr.info {
+  background-color: #242424;
+}
+
+tr.even {
+  background-color: #303030;
+}
+
+tr.drag,
+tr.drag-previous {
+  background-color: #666;
+}
+
+tr.odd td.active {
+  background-color: #333;
+}
+
+tr.even td.active {
+  background-color: #444;
+}
+
+tr.selected td {
+  background-color: #666;
+}
+
+td.region, td.module,
+td.container td.category {
+  background-color: transparent;
+  border-bottom: none;
+  border-top: none;
+  color:  #FFF;
+}
+
+#blocks td.region {
+  color: #4DA449;
+}
+
+table.sticky-header {
+  background: #222;
+}
+
+table.system-status-report th {
+  border-bottom:1px solid #333;
+}
+
+#permissions td.module {
+  background: #000;
+  color: #4DA449;
+}
+
+#permissions td.permission {
+  padding-left: 1.5em;
+}
+
+
+/**********************************************************
+ *                      Admin
+ **********************************************************/
+div.admin-panel {
+  background: #303030;
+  border: 1px solid #242424;
+}
+
+.admin-panel h3 {
+  background: #242424;
+  color: #EEE;
+}
+
+.admin-panel dd {
+  color: #999;
+}
+
+.page-admin-by-module .admin-panel .body p {
+  color: #999;
+}
+
+span.form-required, span.marker {
+  color: #F5173C;
+  text-transform: uppercase;
+}
+
+/***********************************************************
+ *                     Messages
+ **********************************************************/
+.description {
+  color: #EEE;
+  text-transform: none;
+  padding-top: .5em;
+}
+
+div.error {
+  background-color: #F5173C;
+  border: none;
+  color: #333;
+  text-transform: uppercase;
+  background: #F5173C;
+  padding: 1em 1em;
+}
+
+div.error ul {list-style-type: none;padding: 0;}
+
+tr.error {
+  background: #C00000;
+  color: #FFF3F6;
+}
+
+div.notice  {
+  background: #FFF6BF;
+  color: #514721;
+}
+
+div.status {
+  background-color: lightGreen;
+  color: #333;
+  border: none;
+  text-transform: uppercase;
+}
+
+div.help {
+  background-color: #589DFA;
+  background-size: 24px;
+  color: #333;
+  border: none;
+  text-transform: uppercase;
+  -webkit-border-radius:3ex;
+  -moz-border-radius:3ex;
+  padding: 1em;
+}
+
+div.warning {
+  background-color: orange;
+  border: none;
+  color: black;
+  text-transform: uppercase;
+}
+
+div.error a:link, div.error a:visited,
+div.status a:link, div.status a:visited,
+div.help a:link, div.help a:visited,
+div.warning a:link, div.warning a:visited,
+tr.warning a:link, tr.warning a:visited {
+  color:  #333;
+  text-decoration: underline;
+}
+
+div.error a:hover, div.error a:focus,
+div.status a:hover, div.status a:focus,
+div.help a:hover, div.help a:focus,
+div.warning a:hover, div.warning a:focus,
+tr.warning a:hover, tr.warning a:focus {
+  color: black;
+}
+
+table tr.warning {
+  background-color: orange;
+}
+
+table tr.warning td {
+  color: black;
+}
+
+table tr.warning.merge-up td {
+  color: black;
+}
+
+div.admin-dependencies,
+div.admin-required {
+  color: #777;
+}
+
+div.ok, tr.ok,
+table tr.ok td {
+  color:#EEE;
+}
+
+.includes {
+  color: #FFF;
+}
+
+table.system-status-report a:link,
+table.system-status-report a:visited,
+table.update a:link,
+table.update a:visited {
+  color: yellow;
+  text-decoration: none;
+}
+
+table.system-status-report a:hover,
+table.system-status-report a:focus,
+table.update a:hover,
+table.update a:focus {
+  color: yellow;
+  text-decoration: underline;
+}
+
+
+.update table.version tr, .update table.version td {padding: .25em;}
+
+.update tr td {
+  border-bottom: none;
+  border-top: none;
+}
+
+.update tr.warning td,
+.update tr.warning {
+  background-color: #9F3800;
+  color: #FFF6DF;
+}
+
+.update tr.ok {
+  background: #2A6827;
+}
+
+.update tr.error {
+  background-color: #C00000;
+  color: #FFF3F6;
+}
+
+.update tr.warning table.version-recommended td {
+  background: #DF601B;
+}
+
+.update tr.error table.version-recommended td {
+  background: #000;
+}
+
+.update .security-error {
+  color: #000;
+}
+
+.update tr.unknown {
+background:#333333;
+}
+
+.form-item strong.error em {
+  color: #E41F0B;
+}
+
+.node-unpublished,
+.comment-unpublished {
+  background-color: transparent;
+}
+
+/* Preview node and comments */
+.preview .node,
+.preview .comment {
+  background-color: #111;
+}
+
+/***********************************************************
+ *                   Local tasks
+ **********************************************************/
+ul.primary {
+  border-bottom: 0;
+  margin:0;
+  padding:0;
+}
+
+ul.primary li a {
+  background-color: #111;
+  border: none;
+  font-weight: bold;
+  padding: 0.35em 1.4em 0.5em;
+}
+
+.local-tasks ul.primary li.active a {
+  background-color: #111;
+  border: none;
+}
+
+.local-tasks ul.primary li a:hover {
+  background-color: #333;
+  border: none;
+}
+
+ul.secondary {
+  border-bottom: 0;
+}
+
+.tips {
+  text-transform: none;
+}
+
+/***********************************************************
+ *                        Forms
+ **********************************************************/
+fieldset {
+  background-color: #292929;
+  border: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+textarea,
+select,
+input.text,
+input.form-text,
+input.title {
+  background-color: #A7D4FF;
+  border: none;
+  color: black;
+  padding: .2em 1em;
+}
+
+input.form-text:focus,
+input.text:focus,
+input.title:focus,
+textarea:focus,
+.form-select:focus {
+  border: none;
+}
+
+fieldset legend {
+  color: #4BB0FF;
+  text-transform: uppercase;
+}
+
+html.js fieldset.collapsed legend a {
+  background-image: none;
+}
+
+html.js fieldset.collapsible legend a {
+  background: none;
+  padding-left: 0;
+}
+
+.resizable-textarea .grippie {
+  background-color: #333;
+  border: none;
+}
+
+#block-search-0 input {margin: .5em 0;}
+#block-search-0 .form-item label {display:none;}
+
+textarea,input{font:1.15em normal Arial, Helvetica, sans-serif; line-height: 1.4em;}
+
+/***********************************************************
+ *                     Menus
+ **********************************************************/
+li.leaf,
+li.collapsed,
+li.expanded {
+  list-style-image:  none;
+  color: #777;
+}
+
+
+/***********************************************************
+ *                     Poll
+ **********************************************************/
+.poll .bar {
+  background-color: #BBB;
+}
+
+.poll .bar .foreground {
+  background-color: #777;
+}
+
+
+/***********************************************************
+ *                     Views
+ **********************************************************/
+/* Views tables. */
+table.views-entry {
+  border-color: #111;
+  background-color: #000;
+  color: #EEE;
+}
+
+table.views-entry td.view-ops {
+  background-color: #242424;
+}
+
+table.views-entry td.view-name {
+  background-color: #242424;
+}
+
+table.view-disabled {
+  color: #999;
+}
+
+table.views-entry td.view-name,
+table.views-entry td.view-ops {
+  background-color: #242424;
+}
+table.view-enabled td.view-name,
+table.view-enabled td.view-ops {
+  background-color: #303030;
+}
+
+/* Views admin. */
+/**
+ * Summary pad
+ */
+/* set up some defaults so weird themes don't override us too badly. */
+.views-tabset {
+  color: #EEE;
+  background-color: transparent;
+}
+
+.views-tabset a:visited,
+.views-tabset a:hover,
+.views-tabset a {
+  color: #027AC6;
+}
+
+/**
+ * First column: display drawers
+ */
+.views-tabset .views-tabs {
+  background-color: #303030;
+  border-color: #000;
+}
+
+.views-tabset .views-tabs ul li {
+  background: #666;
+  border-bottom: #000 1px solid;
+}
+
+.views-tabset .views-tabs ul li.active {
+  background-color: #444;
+  background-image: none;
+}
+
+.views-tabset .views-tabs ul li a {
+  color: #fff;
+}
+
+.views-tabset .views-tabs ul li a:hover {
+  background-color: #000;
+  background-image: none;
+}
+
+.views-tabset .views-tabs ul li.active a {
+  color: #FFF;
+  background-image: none;
+}
+
+.views-tabset .views-tabs ul li.active a:hover {
+  color: #0A46EE;
+  background-color: #000;
+  background-image: none;
+}
+
+/**
+ * Three columns with setting-summaries
+ */
+.views-tabset .views-display {
+  border-color: #000;
+}
+
+div.views-display-deleted,
+div.views-display-deleted div.top,
+div.views-display-deleted div.tab-section {
+  background-color: darkred;
+}
+
+.views-display {
+  background-color: #444;
+}
+
+.views-display .top {
+  background-color: #444;
+}
+
+.views-display .tab-section .inside .views-category {
+  background-color: #303030;
+  border: none;
+}
+
+.views-display .tab-section .inside .views-category-title {
+  background-color: #242424;
+  border: none;
+}
+
+/**
+ * AJAX pad, the bottom part where settings are edited.
+ */
+
+#views-ajax-title {
+  background-color: #242424;
+  border-color: #000;
+}
+
+#views-ajax-pad .message {
+  background-color: #242424;
+  border-color: #000;
+}
+
+#views-ajax-pad form {
+  background-color: #333;
+  border-color: #000;
+}
+
+#views-ajax-pad .views-messages {
+  border: none;
+  padding: 0;
+}
+
+#views-ajax-pad .form-buttons {
+  background-color: #303030;
+}
+
+/**
+ * Add, Rearrange and Configure buttons using sprites
+ */
+a.views-button-configure,
+a.views-button-add,
+a.views-button-rearrange,
+a.views-button-remove {
+  background-color: transparent;
+  border-bottom: #C2C9CE 1px solid;
+  border-right: #C2C9CE 1px solid;
+}
+
+div.changed {
+  background-color: #303030;
+}
+
+div.view-changed {
+  color: #f93;
+}
+
+.views-display .tab-section .inside .defaulted {
+  color: #aaa;
+}
+
+.hilited {
+  color: #FFF;
+  background-color: #555;
+}
+
+.hilited a.hilite {
+  color: #0A46EE;
+}
+
+.views-display-default a:hover,
+.views-display-default a:active,
+.views-display-default a.active{
+  color: #0A46EE;
+}
+
+#views-ajax-pad fieldset {
+  background: transparent;
+}
+
+#views-ajax-pad pre {
+  border-color: #333;
+  background-color: #222;
+}
+
+form#views-add-display-form {
+  border-color: #000;
+}
+
+form#views-ui-preview-form,
+#center form#views-ui-preview-form {
+  border: none;
+  background-color: #333;
+}
+
+.view-locked {
+  color: red;
+  border: 1px solid red;
+}
+
+.view-frontpage {width: 95%;}
+
+/***********************************************************
+ *                     CTools & Panels
+ **********************************************************/
+.ctools-modal-content a:hover {
+  color: black;
+}
+
+.ctools-modal-content input.form-text,
+.ctools-modal-content input.text,
+.ctools-modal-content input.title,
+.ctools-modal-content textarea,
+.ctools-modal-content select{
+  background-color: #FFF;
+  color: #000;
+}
+
+.ctools-modal-content input.form-text:focus,
+.ctools-modal-content input.text:focus,
+.ctools-modal-content input.title:focus,
+.ctools-modal-content textarea:focus,
+.ctools-modal-content select:focus {
+  background-color: #FFFFDF;
+  border-color: #FF9C00;
+}
+
+.ctools-modal-content .description {
+  color: #555;
+}
+
+html.js div.ctools-dropdown div.ctools-dropdown-container ul li a {
+  width:160px;
+}
+
+#panels-dnd-main div.changed {
+  background-color: #666;
+}
+#panels-dnd-main div.panels-display {
+  background: #444;
+  border-color: #777;
+}
+
+.panel-portlet {
+  background-color: #444;
+  border-color: #777;
+}
+
+.panel-portlet .grabber {
+  background-color: #242424;
+}
+
+.panel-portlet .grabber:hover {
+  background-color: #303030;
+}
+
+/***********************************************************
+ *                    Vertical tabs
+ **********************************************************/
+.vertical-tabs {
+  background: #242424;
+  border-color: #777;
+}
+
+.vertical-tabs-list {
+  border-color: #777;
+}
+
+.vertical-tabs-list li {
+  background: #303030;
+  border-color: #777;
+}
+
+.vertical-tabs-list li.selected {
+  background: #242424;
+}
+
+.vertical-tabs-list li.selected strong {
+  color: #FFF;
+}
+
+/***********************************************************
+ *                     Devel
+ **********************************************************/
+.krumo-root {
+  color: #303030;
+}
+
+/**********************************************************
+ *                       Blocks
+ **********************************************************/
+/**
+ * Styles set for .block, .block-inner, block-title and
+ * .block-content will be inherited by all blocks.
+ */
+.block {
+  clear: both;
+}
+
+.block-inner   {} /* Block inner div */
+.block-title   {margin-bottom: .3em} /* block title */
+#sidebar-menus .block-title {margin-bottom: 0; text-align: right; font-size: 1em;}
+.block-content {} /* Block content wrapper */
+.block a {}
+.block ul {margin:0;padding:0; list-style-type: none;font-size: 0.9em;}
+.block-tagadelic .block-content {line-height:1.5em;}
+
+div.block div.block-edit {
+  height: 0;
+}
+
+/* High specifity selectors to style blocks in one sidebar. */
+#sidebar-menus .block {margin:0;}
+#sidebar-menus .block h2 {}
+#sidebar-menus .block-inner {}
+#sidebar-menus .block-title {font-weight:bold; border-bottom: 4px solid #292929; color: black; background: #A7D4FF;padding: 15px 5px 3px 0;} /* block title */
+#sidebar-menus .block .block-content {}
+#sidebar-menus .block input {width:100px;}
+#sidebar-menus .block input.form-text {background:#A7D4FF;}
+
+#sidebar-menus ul.menu a {color:black;display:block;padding:15px 5px 3px 0;text-align:right;font-weight:bold;font-size: 1em;}
+#sidebar-menus ul.menu li.collapsed  {list-style-type:none;margin:0;border-bottom:4px solid #292929;}
+#sidebar-menus ul.menu li.expanded a {border-bottom:4px solid #292929;}
+#sidebar-menus ul.menu li.leaf       {list-style-type:none;margin:0; border-bottom:4px solid #292929;}
+#sidebar-menus ul.menu li {margin: 0;}
+#sidebar-menus ul.menu li a:link    {color:black;}
+#sidebar-menus ul.menu li a:hover   {background-color:#A7D4FF;color:black;}
+#sidebar-menus ul.menu li a:visited {text-decoration:none;}
+#sidebar-menus ul.menu li.active a  {}
+#sidebar-menus ul.menu li.active-trail {}
+#sidebar-menus ul.menu li a.active  {background-color:#A7D4FF;color:black;}
+#sidebar-menus ul.menu li.first {}
+#sidebar-menus ul.menu li.last  {}
+#sidebar-menus li.expanded ul.menu li {border:none;}
+
+#sidebar-right .block {font-size: .9em; margin: 0 0 1.5em;}
+#sidebar-right .block h2 {}
+#sidebar-right .block-inner {}
+#sidebar-right .block-title {}
+
+#sidebar-menus h3 {
+  background-color: #FFD068;
+  list-style-type: none;
+  margin: 0;
+  border-bottom: 4px solid #292929;
+  color: black;
+  display: block;
+  padding: 15px 5px 3px 0;
+  text-align: right;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+
+/**********************************************************
+ *                   Menu blocks
+ **********************************************************/
+/**
+ * Prefix these with the block id to style one menu only.
+ */
+ul.menu,
+ul.menu ul,
+ul.menu ul ul,
+ul.menu ul ul ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Menu li styles */
+ul.menu li {padding:0;margin:0 0 0 1em;}
+
+ul.menu a {}
+ul.menu li.collapsed  {}
+ul.menu li.expanded   {}
+ul.menu li.expanded a {}
+ul.menu li.leaf       {list-style-type: none;margin: 0;}
+
+ul.menu li a:link    {}
+ul.menu li a:hover   {
+ul.menu li a:visited {}
+ul.menu li.active a  {}
+ul.menu li.active-trail {}
+
+ul.menu li a.active  {}
+
+ul.menu li.first {}
+ul.menu li.last  {}
+li.expanded ul.menu li {}
+
+/**********************************************************
+ *                   Block item-list
+ **********************************************************/
+.block .item-list ul {
+  margin-left: 0.5em;
+}
+.block .item-list ul li {margin-left:1em; }
+
+/**********************************************************
+ *                  Gpanel blocks
+ **********************************************************/
+/* Examples to get started. Add col specific selectors to style
+   blocks in different Gpanel columns, or element selectors to
+   style specific elements */
+.two-col-50 .block {}
+.two-col-50.with-nested .block {}
+.three-col-33 .block {}
+.four-col-25 .block {}
+
+

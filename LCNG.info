@@ -1,0 +1,111 @@
+; $Id:
+;----------// Theme Information
+
+ ; Change the name to match your new subthemes name. Modify the optional description.
+
+  name        = LCNG
+  description = A LCARS-NG Theme by G. Nguyen
+
+;----------// Required Theme Information
+
+  ; Do not change core, engine or base theme - these are required.
+
+  core         = 6.x
+  engine       = phptemplate
+  screenshot   = images/screenshot_lcng.png
+
+;----------// Modular Stylesheets
+
+  stylesheets[all][] = css/page.css
+  stylesheets[all][] = css/style.css
+
+;----------// IE Conditional Stylesheets
+
+  ; Support for the Conditional Styles module. This module allows themes
+  ; to specify conditional stylesheets in their .info file and the conditional
+  ; comments will be automatically included at the end of the standard $styles
+  ; variable. http://drupal.org/project/conditional_styles
+  ;
+  ; Note: You do not need to install the module, it is now included in Genesis.
+
+  ; Example only: see the README in the Conditional Styles module
+  ; conditional-stylesheets[if lte IE 9][all][] = css/ie/ie-rounded-corners.css
+
+;----------// Regions
+
+  ; You can define new regions here.
+
+  regions[h2panel_status]         = h2panel-status area
+  regions[profile_block_about]    = Profile Block About
+  regions[profile_block_content]  = Profile Block Content
+  regions[leaderboard]            = Leaderboard
+  regions[header]                 = Header Blocks
+  regions[secondary_content]      = Secondary Content
+  regions[content_top]            = Content Top
+  regions[content]                = Main Content
+  regions[content_bottom]         = Content Bottom
+  regions[tertiary_content]       = Tertiary Content
+  regions[sidebar_menus]          = Sidebar Menus
+  regions[sidebar_topmenus]       = Sidebar Topmenus
+  regions[left]                   = Sidebar Left
+  regions[right]                  = Sidebar Right
+  regions[footer]                 = Footer
+  regions[closure]                = Closure
+
+  ; 4 col Gpanel
+  regions[four_col_first]    = 4col Gpanel col 1
+  regions[four_col_second]   = 4col Gpanel col 2
+  regions[four_col_third]    = 4col Gpanel col 3
+  regions[four_col_fourth]   = 4col Gpanel col 4
+
+;----------// jQuery Plugins and JavaScripts
+
+  scripts[] = js/lcng.magicheight.js
+  scripts[] = js/curvycorners.js
+
+  ; Equal Height Columns
+  ; This will set first child divs in the #columns division
+  ; to the same height (#sidebar-left, #sidebar-right, #content-column).
+  ; To use uncomment and clear cache data in Performance settings.
+  ; scripts[] = js/jquery.equalizeheights.js
+
+  : Preload CSS Images
+  ; jQuery plugin that automatically preloads all images referenced in CSS files.
+  ; http://www.filamentgroup.com
+  ;scripts[] = js/preloadCssImages.jQuery_v5_minfied.js
+
+  ; Insert WAI ARIA Landmark Roles. Uncomment to use.
+  scripts[] = js/aria-roles.js
+
+;----------// Features
+
+  ; The "features" control which of these check boxes display on the
+  ; admin/build/themes configuration page. This is useful for
+  ; suppressing check boxes for elements not used by your theme.
+
+  features[] = logo
+  features[] = name
+  features[] = slogan
+  features[] = mission
+  features[] = node_user_picture
+  features[] = comment_user_picture
+  features[] = search
+  features[] = favicon
+  features[] = primary_links
+  features[] = secondary_links
+
+  ; Layout: Bars
+  layouts[wide][name] = "Bars"
+  layouts[wide][description] = "Top & Bottomn Bars"
+  layouts[wide][template] = "page-bars"
+  layouts[wide][regions][] = "content"
+  layouts[wide][regions][] = "left"
+  layouts[wide][regions][] = "right"
+
+  ; Layout: Full
+  layouts[full][name] = "Full"
+  layouts[full][description] = "Full content"
+  layouts[full][template] = "page-full"
+  layouts[full][regions][] = "content"
+  layouts[full][regions][] = "left"
+  layouts[full][regions][] = "right"

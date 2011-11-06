@@ -1,0 +1,48 @@
+/* $Id: ie-rounded-corners.css 1 2010-08-01 17:41:27Z root $ */
+
+/**
+ * @file ie-example.css
+ *
+ * Support for the Conditional Styles module. This module allows themes 
+ * to specify conditional stylesheets in their .info file and the conditional 
+ * comments will be automatically included at the end of the standard $styles variable. 
+ * 
+ * http://drupal.org/project/conditional_styles
+ *
+ * The module is included in Genesis, you do not need to download and install it.
+ */
+
+
+.form-submit{
+  cursor:pointer;
+  background:none;
+  border: none;
+  color:black;
+  font-size:.85em;
+  font-weight:bold;
+  padding: 0;
+  margin:0;
+  height: auto;
+  width: auto;
+  text-transform: uppercase;
+}
+
+.form-item label {
+  text-transform:uppercase;
+}
+
+.submitButton {
+    background: transparent url('../../images/bg_button_a.png') no-repeat scroll top right;
+    color: #444;
+    float: left;
+    height: 24px;
+    margin: 0 .5em 0 0;
+    padding: 0px 18px 0px 0px; /* sliding doors padding */
+    text-decoration: none;
+}
+
+.submitButton span {
+    background: transparent url('../../images/bg_button_span.png') no-repeat;
+    line-height: 2.1em;
+    padding: 5px 0px 5px 18px;
+}
