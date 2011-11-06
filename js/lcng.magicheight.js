@@ -15,8 +15,10 @@
             $("#sidebar-magicheight").height(mainHeight);
           }
     }
-    
-    window.onload = magicHeight;
+
+    $(window).load(function() {
+      magicHeight();
+    });
 
     $(window).resize(function() {
       magicHeight();
