@@ -1,0 +1,14 @@
+LCNG is a LCARS-NG theme by G. Nguyen based on the sub-theme GENESIS inspired by the LCARS-GUI from Star Trek: The Next Generation (TNG)
+LCARS-NG is an acronym for LIBRARY COMPUTER ACCESS/RETRIEVAL SYSTEM – NEXT GENERATION
+
+FEATURES
+- CSS rounded-corners techniques for optimal curves (javascript fallback for the internet explorer with CURVYCORNERS.)
+- dynamically fullwindow bars and L-bows with auto height if content fits window height
+- different layouts for optimal content display
+- context layouts
+- support drupal menusystem in sidebar-menus
+- user profile page
+
+PROJECT INFO
+Project status: Beta
+Drupal version: 6.x
