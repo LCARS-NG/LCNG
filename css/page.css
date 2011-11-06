@@ -460,9 +460,7 @@ td.sidebar-first {}
 
 .section-user .account-management input.form-text, .section-user textarea {
   text-align: center;
-  border-radius:15ex;
-  -webkit-border-radius: 15ex;
-  -moz-border-radius: 15ex;
+  border-radius: 15ex;
 }
 
 /**********************************************************
