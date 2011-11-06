@@ -1,5 +1,4 @@
 <?php
-// $Id: template.php 122 2011-04-21 19:46:41Z giang $
 
 /**
  * @file template.php
@@ -22,12 +21,7 @@
  * @param $hook
  *   The name of the template being rendered.
  */
-/*
-function LCNG_preprocess(&$vars, $hook) {
-  $vars['sample_variable'] = t('Lorem ipsum.');
-}
 
-*/
 
 function LCNG_preprocess_page(&$vars) {
   $vars['tabs'] = menu_primary_local_tasks();
@@ -92,30 +86,6 @@ function LCNG_preprocess_page(&$vars) {
   if ($class = array_search(preg_replace('![^abcdefghijklmnopqrstuvwxyz0-9-]+!s', '', 'page-'. drupal_strtolower(arg(0))), $classes)) {
     unset($classes[$class]);
   }
-
-
- /** 
-  * Optional Region body classes
-  * Uncomment the following if you need to set
-  * a body class for each active region.
-  */
-  /*		
-  if (!empty($vars['leaderboard'])) {
-    $classes[] = 'leaderboard';
-  }
-  if (!empty($vars['header'])) {
-    $classes[] = 'header-blocks';
-  }
-  if (!empty($vars['secondary_content'])) {
-    $classes[] = 'secondary-content';
-  }
-  if (!empty($vars['tertiary_content'])) {
-    $classes[] = 'tertiary-content';
-  }
-  if (!empty($vars['footer'])) {
-    $classes[] = 'footer';
-  }
-  */
 
   /**
    * Additional body classes to help out themers.
@@ -371,20 +341,6 @@ function LCNG_breadcrumb($breadcrumb) {
 }
 
 
-/* Rename Tabs at profile page
-
-function LCNG_preprocess(&$variables, $hook) {
-  if ($hook == 'page') {
-    if (arg(0) == 'user') {
-      $variables['tabs'] = str_replace('View', 'Profile', $variables['tabs']);
-      $variables['tabs'] = str_replace('Anzeigen', 'Profil', $variables['tabs']);
-    }
-  return $variables;
-  }
-}
-
- */
-
 /**
 * Override or insert vars into user-picture.tpl.php.
 * http://drupal.org/node/668362#comment-2572996
@@ -516,98 +472,6 @@ function LCNG_preprocess_user_picture(&$variables) {
 }
 
 
-/**
-* Remove colon after title.
-
-function LCNG_form_element($element, $value) {
-  // This is also used in the installer, pre-database setup.
-  $t = get_t();
-
-  $output = '<div class="form-item"';
-  if (!empty($element['#id'])) {
-    $output .= ' id="'. $element['#id'] .'-wrapper"';
-  }
-  $output .= ">\n";
-  $required = !empty($element['#required']) ? '<span class="form-required" title="'. $t('This fielgetd is required.') .'">*</span>' : '';
-
-  if (!empty($element['#title'])) {
-    $title = $element['#title'];
-    if (!empty($element['#id'])) {
-      $output .= ' <label for="'. $element['#id'] .'">'. $t('!title !required', array('!title' => filter_xss_admin($title), '!required' => $required)) ."</label>\n";
-    }
-    else {
-      $output .= ' <label>'. $t('!title !required', array('!title' => filter_xss_admin($title), '!required' => $required)) ."</label>\n";
-    }
-  }
-
-  $output .= " $value\n";
-
-  if (!empty($element['#description'])) {
-    $output .= ' <div class="description">'. $element['#description'] ."</div>\n";
-  }
-
-  $output .= "</div>\n";
-
-  return $output;
-}
-
-/**
-* Preprocess user profile form.
-
-function LCNG_preprocess_user_profile_form(&$vars) {
-
-  // Uncomment the following line if Devel module is enabled, to view the contents of the form.
-  // dsm($vars['form']);
-
-  // Change the help text for specific form elements.
-  // $vars['form']['account']['name']['#description'] = t('Custom description regarding the Username.');
-
-  // Adjust the titles of several fieldsets.
-  // $vars['form']['picture']['#title'] = t('Your user picture / avatar');
-  // $vars['form']['timezone']['#title'] = t('Time zone');
-  // unset($vars['form']['timezone']['timezone']['#title']);
-
-  // Set several elements that by default have collapsed fieldsets to expanded and non-collapsible.
-  $vars['form']['theme_select']['themes']['#collapsible'] = TRUE;
-  $vars['form']['account']['#collapsible'] = TRUE;
-  $vars['form']['Personal information']['#collapsible'] = TRUE;
-  $vars['form']['Professional information']['#collapsible'] = TRUE;
-  $vars['form']['locale']['#collapsible'] = TRUE;
-  $vars['form']['signature_settings']['#collapsible'] = TRUE;
-  $vars['form']['picture']['#collapsible'] = TRUE;
-  $vars['form']['contact']['#collapsible'] = TRUE;
-  $vars['form']['timezone']['#collapsible'] = TRUE;
-
-  // Adjust the size of several fields to fit better in 2 columns.
-  $vars['form']['account']['name']['#size'] = 25;
-  $vars['form']['account']['mail']['#size'] = 25;
-  $vars['form']['picture']['picture_upload']['#size'] = 40;
-  $vars['form']['signature_settings']['signature']['#cols'] = 50;
-
-  // Rename the Save and Delete buttons to be more clear.
-  // $vars['form']['submit']['#value'] = t('Save profile');
-  //$vars['form']['delete']['#value'] = t('Delete account');
-
-
-  // Prepare all of the desired form elements as variables, to be used in user-profile-form.tpl.php.
-  // Everything before this part is optional.
-  $vars['account'] = drupal_render($vars['form']['account']);
-  $vars['personal_info'] = drupal_render($vars['form']['Personal information']);
-  $vars['professional_info'] = drupal_render($vars['form']['Professional information']);
-  $vars['locale'] = drupal_render($vars['form']['locale']);
-  $vars['block'] = drupal_render($vars['form']['block']);
-  $vars['user_titles'] = drupal_render($vars['form']['user_titles']);
-  $vars['theme_select'] = drupal_render($vars['form']['theme_select']);
-  $vars['picture'] = drupal_render($vars['form']['picture']);
-  $vars['signature_settings'] = drupal_render($vars['form']['signature_settings']);
-  $vars['contact'] = drupal_render($vars['form']['contact']);
-  $vars['timezone'] = drupal_render($vars['form']['timezone']);
-  $vars['submit'] = drupal_render($vars['form']['submit']);
-  $vars['delete'] = drupal_render($vars['form']['delete']);
-
-}
-*/
-
 function LCNG_preprocess_user_profile(&$variables) {
 
   //var_dump($vars) ;
@@ -692,8 +556,6 @@ function pn_node($node, $mode = 'n') {
   }
 }
 
-// function LCNG_filter_tips() { return ''; }
-// function LCNG_filter_tips_more_info() { return ''; }
 
 function LCNG_bd_video_formatter_default($element) {
   $field = content_fields($element['#field_name'], $element['#type_name']);
