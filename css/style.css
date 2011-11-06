@@ -185,7 +185,9 @@ li {padding-bottom: .25em;line-height: 1.25em;}
   width: auto;
   text-transform: uppercase;
   -moz-border-radius: 10px;
+  -webkit-border-radius:10px;
   border-radius: 10px 10px;
+  behavior: url(/sites/all/themes/LCNG/PIE.htc);   /* change path here match theme  */
 }
 
 .submitButton, .form-button-cancel {
@@ -404,6 +406,7 @@ html.js fieldset.collapsible .fieldset-wrapper {
   padding: 25px 0 0 5px;
   -webkit-border-top-left-radius: 29px;
   -moz-border-radius-topleft: 29px;
+  behavior: url(/sites/all/themes/LCNG/PIE.htc);   /* change path here match theme  */
 }
 
 .innerframeTop {
@@ -413,6 +416,7 @@ html.js fieldset.collapsible .fieldset-wrapper {
   padding:20px 0 0px 10px;
   -webkit-border-top-left-radius: 20px;
   -moz-border-radius-topleft: 20px;
+  behavior: url(/sites/all/themes/LCNG/PIE.htc);   /* change path here match theme  */
 }
 
 /**********************************************************
@@ -441,6 +445,7 @@ html.js fieldset.collapsible .fieldset-wrapper {
   margin-bottom: 1em;
   -webkit-border-radius: 1ex;
   -moz-border-radius: 1ex;
+  behavior: url(/sites/all/themes/LCNG/PIE.htc);   /* change path here match theme  */
 }
 
 /* Inner wrapper div for nodes. */
@@ -709,6 +714,7 @@ div.help {
   text-transform: uppercase;
   -webkit-border-radius:3ex;
   -moz-border-radius:3ex;
+  behavior: url(/sites/all/themes/LCNG/PIE.htc);   /* change path here match theme  */
   padding: 1em;
 }
 

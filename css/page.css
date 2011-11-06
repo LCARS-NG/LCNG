@@ -1,5 +1,3 @@
-/* $Id: page.css 126 2011-11-05 19:45:14Z giang $ */
-
 /**
  * @file page.css
  * This stylesheet provides the page main styles for this theme.
@@ -455,12 +453,14 @@ td.sidebar-first {}
   background: #333;
   border-radius:5ex;
   -webkit-border-radius: 5ex;
-  -moz-border-radius: 5ex;
+  -moz-border-radius: 5ex;/
 }
 
 .section-user .account-management input.form-text, .section-user textarea {
   text-align: center;
   border-radius: 15ex;
+  -webkit-border-radius: 5ex;
+  -moz-border-radius: 5ex;
 }
 
 /**********************************************************
@@ -488,6 +488,7 @@ td.sidebar-first {}
   border-radius:39px 0 0 0;
   -webkit-border-top-left-radius: 39px;
   -moz-border-radius-topleft: 39px;
+  behavior: url(/sites/all/themes/LCNG/PIE.htc);   /* change path here match theme  */
 }
 
 .lbow-topleft-negativ {
@@ -498,6 +499,7 @@ td.sidebar-first {}
   border-radius:20px 0 0 0;
   -webkit-border-top-left-radius: 20px;
   -moz-border-radius-topleft: 20px;
+  behavior: url(/sites/all/themes/LCNG/PIE.htc);   /* change path here match theme  */
 }
 
 .lbow-content {padding: 10px 0 10px 20px;text-transform: uppercase;font-size: 10px;}
@@ -524,6 +526,7 @@ td.sidebar-first {}
   border-radius:0 0 0 39px;
   -webkit-border-bottom-left-radius: 39px;
   -moz-border-radius-bottomleft: 39px;
+  behavior: url(/sites/all/themes/LCNG/PIE.htc);   /* change path here match theme  */
 }
 
 .lbow-bottomleft-negativ {
@@ -534,6 +537,7 @@ td.sidebar-first {}
   border-radius:0 0 0 20px;
   -webkit-border-bottom-left-radius: 20px;
   -moz-border-radius-bottomleft: 20px;
+  behavior: url(/sites/all/themes/LCNG/PIE.htc);   /* change path here match theme  */
 }
 
 .lbow-bottomleft-bar  {
@@ -548,6 +552,7 @@ td.sidebar-first {}
   border-radius:3ex;
   -webkit-border-radius:3ex;
   -moz-border-radius:3ex;
+  behavior: url(/sites/all/themes/LCNG/PIE.htc);   /* change path here match theme  */
   padding: 1em !important;
   margin-bottom: .5em;
 }
