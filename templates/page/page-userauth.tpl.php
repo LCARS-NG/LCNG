@@ -126,9 +126,6 @@
                         <?php print $content; ?>
                       </div>
                       
-                      <?php if ($tabs2): print '<ul class="tabs secondary">'. $tabs2 .'</ul>'; endif; ?>
-                      <?php if ($tabs): ?><div class="local-tasks"><div class="clear-block"><?php print $tabs; ?></div></div><?php endif; ?>
-                    
                     </div> <!-- /main-content -->
                   </div> <!-- /content-inner -->
                 </div> <!-- /content-column -->
