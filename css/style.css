@@ -103,7 +103,11 @@ a:hover   {color: #A7D4FF;}
 /* Set global a:focus styles. */
 a:focus {
   color: white;
-  outline: none;
+  outline: 0px auto #FFF;
+}
+
+:focus {
+  outline: 0px auto #FFF;
 }
 
 /* Drupal sets this to black. */
@@ -182,7 +186,7 @@ li {padding-bottom: .25em;line-height: 1.25em;}
   font-size:.85em;
   font-weight:bold;
   padding: 5px 10px;
-  margin:0 0 5px;
+  margin:0 0 15px;
   height: auto;
   width: auto;
   text-transform: uppercase;
@@ -688,6 +692,10 @@ span.form-required, span.marker {
   width: 100px;
 }
 
+.section-user .account-management div.error {
+  margin: 0 40%;
+}
+
 div.error {
   background-color: #F5173C;
   border: none;
@@ -695,7 +703,6 @@ div.error {
   text-transform: uppercase;
   background: #F5173C;
   padding: 1em 1em;
-  margin: 0 40%;
 }
 
 div.error ul {list-style-type: none;padding: 0;}
@@ -910,7 +917,7 @@ input.text:focus,
 input.title:focus,
 textarea:focus,
 .form-select:focus {
-  border: none;
+
 }
 
 fieldset legend {
@@ -1291,6 +1298,7 @@ div.block div.block-edit {
 #sidebar-menus ul.menu li.collapsed  {list-style-type:none;margin:0;border-bottom:4px solid #292929;}
 #sidebar-menus ul.menu li.expanded a {border-bottom:4px solid #292929;}
 #sidebar-menus ul.menu li.leaf       {list-style-type:none;margin:0; border-bottom:4px solid #292929;}
+#sidebar-menus ul.menu li ul > li.leaf {background:#6257fa;}
 #sidebar-menus ul.menu li {margin: 0;}
 #sidebar-menus ul.menu li a:link    {color:black;}
 #sidebar-menus ul.menu li a:hover   {background-color:#A7D4FF;color:black;}

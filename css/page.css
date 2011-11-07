@@ -100,13 +100,17 @@ body > #container {
  **********************************************************/
 /* Target both sidebars with this low specifity selector. */
 .sidebar {}
-.sidebar a:link    {color: black;}
+.sidebar a:link    {}
 .sidebar a:visited {}
 .sidebar a:hover   {}
 .sidebar a:focus   {}
 .sidebar a:active  {}
 
 .sidebar-inner {}
+
+#sidebar-menus a:link {color: black;}
+#sidebar-menus a:active {color: black;}
+#sidebar-menus a:visited {color: black;}
 
 /* Target a specific sidebar, inner or sidebar-inner. */
 #sidebar-menus {}
