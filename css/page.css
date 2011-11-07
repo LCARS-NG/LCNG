@@ -450,13 +450,6 @@ td.sidebar-first {}
   margin: .5em 0;
 }
 
-.section-user form#user-login {
-  width: 230px;
-  margin: 0 auto 1em;
-  padding: 1em;
-
-}
-
 .section-user .account-management .form-text, .section-user textarea {
   text-align: center;
   border-radius: 15ex;
