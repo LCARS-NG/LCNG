@@ -105,9 +105,7 @@
     <table class="center">
       <tbody>
         <tr>
-          <td class="top ibar-height">
-            <div class="ibar1"></div> <!-- /topbar -->
-          </td>
+          <td class="top ibar-height rounded1"><!-- /topbar --></td>
         </tr>
         <tr>
           <td class="center">
@@ -150,7 +148,7 @@
           </td>
         </tr>
         <tr>
-          <td class="bottom ibar-height"><div class="ibar1"></div> <!-- /bottombar --> </td>
+          <td class="bottom ibar-height rounded1"><!-- /bottombar --> </td>
         </tr>
       </tbody>
     </table>
