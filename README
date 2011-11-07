@@ -1,19 +1,21 @@
 LCNG is a LCARS-NG theme for Drupal 6 by G. Nguyen. It is originally based on the sub-theme GENESIS. This theme was inspired by the LCARS-GUI from Star Trek: The Next Generation (TNG)
 LCARS-NG is an acronym for "LIBRARY COMPUTER ACCESS/RETRIEVAL SYSTEM – NEXT GENERATION"
 
-The frontpage of this theme is a user login page to access LCARS-NG. If you want you can add a link to a public page on the frontoage or modified the template.php file.
-
-
 FEATURES
-- CSS rounded-corners techniques for optimal curves (javascript fallback for the internet explorer with CSS3PIE)
+- CSS3 rounded-corners with CSS3PIE for optimal curves on Firefox, Chrome and Internet Exlorer.
+- fluid layouts
 - dynamically fullwindow bars and L-bows with auto height if content fits window height
 - different layouts for optimal content display
 - context layouts
 - support drupal menusystem in sidebar-menus
 - user profile page
+- user login page
 
 INSTALL
-- Just download the files and put it in your Drupal theme folder in "/sites/all/themes" and enjoy :)
+- Just download the project archive and extract all files in the Drupal theme folder "/sites/all/themes/LCNG".
+
+HELP
+The frontpage of this theme is a user login page to access LCARS-NG by design. You can add a link to a custom frontpage for public users in the template file "page-front-anonymous.tpl.php".
 
 SCREENSHOT
 http://www.screenshots.cc/original/51212/d85as
