@@ -123,7 +123,9 @@
                       <?php if ($help): print $help; endif; ?>
                       
                       <div id="content" class="section region">
-                        <?php print l(t('Login'), 'user'); ?>
+                        <?php
+print drupal_get_form('user_login_block');
+?>
                       </div>
                       
                       <?php if ($tabs2): print '<ul class="tabs secondary">'. $tabs2 .'</ul>'; endif; ?>
