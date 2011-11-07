@@ -1,5 +1,4 @@
 <?php
-// $Id: page-full.tpl.php 95 2011-03-09 18:14:26Z giang $
 
 /**
  * @file page.tpl.php

@@ -1,5 +1,4 @@
 <?php
-// $Id: page.tpl.php 126 2011-11-05 19:45:14Z giang $
 
 /**
  * @file page.tpl.php
@@ -89,7 +88,6 @@
   <head>
     <?php print $head; ?>
     <title><?php print $head_title; ?></title>
-    <link href='http://fonts.googleapis.com/css?family=Droid+Sans|Droid+Sans:bold' rel='stylesheet' type='text/css' /> 
     <?php print $styles; ?>
     <?php print $scripts; ?>
   </head>

@@ -1,6 +1,8 @@
 /* LCNG a LCARS-NG Theme by G. Nguyen */
 /* based on Genesis Starter Theme */
 
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans:400,700);
+
 html, body {
   font-size:85%;
   height:99%;
@@ -23,7 +25,7 @@ body {
 }
 
 /**********************************************************
- *                   Customn scrollbar
+ *                   Custom scrollbar
  **********************************************************/
 
 ::-webkit-scrollbar {
@@ -642,7 +644,6 @@ table.system-status-report th {
 #permissions td.permission {
   padding-left: 1.5em;
 }
-
 
 /**********************************************************
  *                      Admin
@@ -1309,7 +1310,6 @@ div.block div.block-edit {
   font-weight: bold;
   font-size: 1em;
 }
-
 
 /**********************************************************
  *                   Menu blocks

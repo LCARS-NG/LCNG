@@ -1,5 +1,4 @@
 <?php
-// $Id: page-userauth.tpl.php 118 2011-04-13 16:48:32Z giang $
 
 /**
  * @file page.tpl.php
@@ -89,7 +88,6 @@
 <head>
   <?php print $head; ?>
   <title><?php print $head_title; ?></title>
-  <link href='http://fonts.googleapis.com/css?family=Droid+Sans|Droid+Sans:bold' rel='stylesheet' type='text/css' /> 
   <?php print $styles; ?>
   <?php print $scripts; ?>
 </head>

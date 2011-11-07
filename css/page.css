@@ -464,23 +464,19 @@ td.sidebar-first {}
  *      LCARS Interface bars, bends and brackets
  **********************************************************/
 
-.rounded1 {
-    -webkit-border-radius: 3ex;
-    -moz-border-radius:3ex;
-    border-radius: 3ex;
-    background: #FCC;
-    background: -webkit-gradient(0 0, 0 100%, from(#FCC), to(#C99));
-    background: -moz-linear-gradient(#A6FFFE, #A7D4FF);
-    -pie-background: linear-gradient(#A6FFFE, #A7D4FF);
-  behavior: url(/sites/all/themes/LCNG/PIE.htc);   /* change path here match theme  */
-}
-
 /* simple top and bottom bar */
 
-td.rounded1 {
-  background-color: #A7D4FF;
+.rounded1 {
   padding: .5em;
   height: 25px;
+  -webkit-border-radius: 3ex;
+  -moz-border-radius:3ex;
+  border-radius: 3ex;
+  background-color: #A7D4FF;
+  background: -webkit-gradient(0 0, 0 100%, from(#A6FFFE), to(#A7D4FF));
+  background: -moz-linear-gradient(#A6FFFE, #A7D4FF);
+  -pie-background: linear-gradient(#A6FFFE, #A7D4FF);
+  behavior: url(/sites/all/themes/LCNG/PIE.htc);   /* change path here match theme  */
 }
 
 /* lbow-topleft */
@@ -576,4 +572,5 @@ span.admin-enabled {
   color: green;
 }
 
+table .center #breadcrumb {padding: .5em;}
 

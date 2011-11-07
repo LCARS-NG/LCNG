@@ -89,7 +89,6 @@
 <head>
   <?php print $head; ?>
   <title><?php print $head_title; ?></title>
-  <link href='http://fonts.googleapis.com/css?family=Droid+Sans|Droid+Sans:bold' rel='stylesheet' type='text/css' /> 
   <?php print $styles; ?>
   <?php print $scripts; ?>
 </head>
