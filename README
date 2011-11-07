@@ -1,4 +1,5 @@
-LCNG is a LCARS-NG theme for Drupal 6 by G. Nguyen. It is originally based on the sub-theme GENESIS. This theme was inspired by the LCARS-GUI from Star Trek: The Next Generation (TNG)
+LCNG is a LCARS-NG theme for Drupal 6 by G. Nguyen. It's originally based on the sub-theme GENESIS. This theme was inspired by the LCARS-GUI from Star Trek: The Next Generation (TNG)
+
 LCARS-NG is an acronym for "LIBRARY COMPUTER ACCESS/RETRIEVAL SYSTEM – NEXT GENERATION"
 
 FEATURES
@@ -19,3 +20,6 @@ The frontpage of this theme is a user login page to access LCARS-NG by design. Y
 
 SCREENSHOT
 http://www.screenshots.cc/original/51212/d85as
+
+DEMO
+http://t2.lcars-ng.net/
