@@ -28,7 +28,7 @@
 #genesis-1c .sidebar-right .content-inner{margin-right:200px;}
 #genesis-1c .two-sidebars .content-inner{margin:0 200px 0 140px;}
 #genesis-1c .two-sidebars #header .content-inner {margin:0 0 0 140px;}
-#genesis-1c #sidebar-menus {width:120px;margin-left:-100%;line-height:1em;padding-bottom: 30px;}
+#genesis-1c #sidebar-menus {width:120px;margin-left:-100%;line-height:1em;margin-bottom: 40px;}
 #genesis-1c #sidebar-left{}
 #genesis-1c #sidebar-right {width:180px;margin-left:-180px;}
 #genesis-1c .content-inner.top-panel {margin:0 0 0 140px;clear: both;}
@@ -100,7 +100,7 @@ body > #container {
  **********************************************************/
 /* Target both sidebars with this low specifity selector. */
 .sidebar {}
-.sidebar a:link    {}
+.sidebar a:link    {color: black;}
 .sidebar a:visited {}
 .sidebar a:hover   {}
 .sidebar a:focus   {}
@@ -467,8 +467,6 @@ td.sidebar-first {}
 /* simple top and bottom bar */
 
 .rounded1 {
-  padding: .5em;
-  height: 25px;
   -webkit-border-radius: 3ex;
   -moz-border-radius:3ex;
   border-radius: 3ex;
@@ -477,6 +475,11 @@ td.sidebar-first {}
   background: -moz-linear-gradient(#A6FFFE, #A7D4FF);
   -pie-background: linear-gradient(#A6FFFE, #A7D4FF);
   behavior: url(/sites/all/themes/LCNG/PIE.htc);   /* change path here match theme  */
+}
+
+td.rounded1 {
+  padding: .5em;
+  height: 25px;
 }
 
 /* lbow-topleft */

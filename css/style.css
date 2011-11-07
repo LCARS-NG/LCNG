@@ -1275,7 +1275,7 @@ div.block div.block-edit {
 #sidebar-menus .block-inner {}
 #sidebar-menus .block-title {font-weight:bold; border-bottom: 4px solid #292929; color: black; background: #A7D4FF;padding: 15px 5px 3px 0;} /* block title */
 #sidebar-menus .block .block-content {}
-#sidebar-menus .block input {width:100px;}
+#sidebar-menus .block input {width:80px;}
 #sidebar-menus .block input.form-text {background:#A7D4FF;}
 
 #sidebar-menus ul.menu a {color:black;display:block;padding:15px 5px 3px 0;text-align:right;font-weight:bold;font-size: 1em;}
