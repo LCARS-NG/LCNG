@@ -680,6 +680,14 @@ span.form-required, span.marker {
   padding-top: .5em;
 }
 
+.section-user .account-management .description {
+  display: none;
+}
+
+.section-user .account-management input.form-text {
+  width: 100px;
+}
+
 div.error {
   background-color: #F5173C;
   border: none;
@@ -687,6 +695,7 @@ div.error {
   text-transform: uppercase;
   background: #F5173C;
   padding: 1em 1em;
+  margin: 0 40%;
 }
 
 div.error ul {list-style-type: none;padding: 0;}
