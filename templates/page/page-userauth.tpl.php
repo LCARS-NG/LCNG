@@ -133,7 +133,7 @@
           </td>
         </tr>
         <tr>
-          <td class="bottom ibar-height rounded1"></div> <!-- /bottombar --> </td>
+          <td class="bottom ibar-height rounded1"> <!-- /bottombar --> </td>
         </tr>
       </tbody>
     </table>

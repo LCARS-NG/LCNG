@@ -23,7 +23,6 @@
 #content-column{width:100%;margin-bottom:1em;}
 .clear,#nav,#columns,#breadcrumb,#content-bottom,#secondary-content,#tertiary-content,#footer-wrapper,#footer,#footer-message{clear:both;}
 
-
 #genesis-1c .sidebar-left .content-inner{}
 #genesis-1c .sidebar-right .content-inner{margin-right:200px;}
 #genesis-1c .two-sidebars .content-inner{margin:0 200px 0 140px;}
@@ -350,7 +349,7 @@ h1#page-title {}
 #page-title h2 {display:inline;background: #292929;line-height: .85em;padding: 0 5px;}
 
 .section-customerror #page-title{background:red;}
-.section-customerror #page-title h2 {color:red};
+.section-customerror #page-title h2 {color:red;}
 .section-customerror #content {color:red}
 
 /**********************************************************

@@ -102,12 +102,11 @@ a:hover   {color: #A7D4FF;}
 
 /* Set global a:focus styles. */
 a:focus {
-  color: white;
-  outline: 0px auto #FFF;
+  outline: 0;
 }
 
 :focus {
-  outline: 0px auto #FFF;
+  outline: 0;
 }
 
 /* Drupal sets this to black. */
@@ -1062,7 +1061,7 @@ table.view-enabled td.view-ops {
 div.views-display-deleted,
 div.views-display-deleted div.top,
 div.views-display-deleted div.tab-section {
-  background-color: darkred;
+  background-color: #444;
 }
 
 .views-display {
@@ -1287,33 +1286,23 @@ div.block div.block-edit {
 
 /* High specifity selectors to style blocks in one sidebar. */
 #sidebar-menus .block {margin:0;}
-#sidebar-menus .block h2 {}
-#sidebar-menus .block-inner {}
 #sidebar-menus .block-title {font-weight:bold; border-bottom: 4px solid #292929; color: black; background: #A7D4FF;padding: 15px 5px 3px 0;} /* block title */
-#sidebar-menus .block .block-content {}
 #sidebar-menus .block input {width:80px;}
 #sidebar-menus .block input.form-text {background:#A7D4FF;}
 
 #sidebar-menus ul.menu a {color:black;display:block;padding:15px 5px 3px 0;text-align:right;font-weight:bold;font-size: 1em;}
 #sidebar-menus ul.menu li.collapsed  {list-style-type:none;margin:0;border-bottom:4px solid #292929;}
 #sidebar-menus ul.menu li.expanded a {border-bottom:4px solid #292929;}
-#sidebar-menus ul.menu li.leaf       {list-style-type:none;margin:0; border-bottom:4px solid #292929;}
+#sidebar-menus ul.menu li.leaf {list-style-type:none;margin:0; border-bottom:4px solid #292929;}
 #sidebar-menus ul.menu li ul > li.leaf {background:#6257fa;}
 #sidebar-menus ul.menu li {margin: 0;}
-#sidebar-menus ul.menu li a:link    {color:black;}
-#sidebar-menus ul.menu li a:hover   {background-color:#A7D4FF;color:black;}
+#sidebar-menus ul.menu li a:link {color:black;}
+#sidebar-menus ul.menu li a:hover {background-color:#A7D4FF;color:black;}
 #sidebar-menus ul.menu li a:visited {text-decoration:none;}
-#sidebar-menus ul.menu li.active a  {}
-#sidebar-menus ul.menu li.active-trail {}
-#sidebar-menus ul.menu li a.active  {background-color:#A7D4FF;color:black;}
-#sidebar-menus ul.menu li.first {}
-#sidebar-menus ul.menu li.last  {}
+#sidebar-menus ul.menu li a.active {background-color:#A7D4FF;color:black;}
 #sidebar-menus li.expanded ul.menu li {border:none;}
 
 #sidebar-right .block {font-size: .9em; margin: 0 0 1.5em;}
-#sidebar-right .block h2 {}
-#sidebar-right .block-inner {}
-#sidebar-right .block-title {}
 
 #sidebar-menus h3 {
   background-color: #FFD068;
@@ -1344,24 +1333,7 @@ ul.menu ul ul ul {
 
 /* Menu li styles */
 ul.menu li {padding:0;margin:0 0 0 1em;}
-
-ul.menu a {}
-ul.menu li.collapsed  {}
-ul.menu li.expanded   {}
-ul.menu li.expanded a {}
 ul.menu li.leaf       {list-style-type: none;margin: 0;}
-
-ul.menu li a:link    {}
-ul.menu li a:hover   {
-ul.menu li a:visited {}
-ul.menu li.active a  {}
-ul.menu li.active-trail {}
-
-ul.menu li a.active  {}
-
-ul.menu li.first {}
-ul.menu li.last  {}
-li.expanded ul.menu li {}
 
 /**********************************************************
  *                   Block item-list
@@ -1371,14 +1343,4 @@ li.expanded ul.menu li {}
 }
 .block .item-list ul li {margin-left:1em; }
 
-/**********************************************************
- *                  Gpanel blocks
- **********************************************************/
-/* Examples to get started. Add col specific selectors to style
-   blocks in different Gpanel columns, or element selectors to
-   style specific elements */
-.two-col-50 .block {}
-.two-col-50.with-nested .block {}
-.three-col-33 .block {}
-.four-col-25 .block {}
 
