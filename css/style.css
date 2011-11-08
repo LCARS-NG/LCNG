@@ -362,7 +362,7 @@ div.views-fluid-grid h3 {
  *                    Main-Content
  **********************************************************/
 
-#main-content {min-width: 250px;}
+#main-content {min-width: 150px;}
 .section-node h2{line-height:1em;}
 
 .local-tasks {
@@ -1338,9 +1338,7 @@ ul.menu li.leaf       {list-style-type: none;margin: 0;}
 /**********************************************************
  *                   Block item-list
  **********************************************************/
-.block .item-list ul {
-  margin-left: 0.5em;
-}
-.block .item-list ul li {margin-left:1em; }
+
+
 
 
