@@ -94,18 +94,23 @@
   features[] = primary_links
   features[] = secondary_links
 
+;----------// Context layouts
+
+  ; Please install the module http://drupal.org/project/context to use these these layouts
+  ; To use uncomment and clear cache data in Performance settings.
+
   ; Layout: Bars
-  layouts[wide][name] = "Bars"
-  layouts[wide][description] = "Top & Bottomn Bars"
-  layouts[wide][template] = "page-bars"
-  layouts[wide][regions][] = "content"
-  layouts[wide][regions][] = "left"
-  layouts[wide][regions][] = "right"
+  ; layouts[wide][name] = "Bars"
+  ; layouts[wide][description] = "Top & Bottomn Bars"
+  ; layouts[wide][template] = "page-bars"
+  ; layouts[wide][regions][] = "content"
+  ; layouts[wide][regions][] = "left"
+  ; layouts[wide][regions][] = "right"
 
   ; Layout: Full
-  layouts[full][name] = "Full"
-  layouts[full][description] = "Full content"
-  layouts[full][template] = "page-full"
-  layouts[full][regions][] = "content"
-  layouts[full][regions][] = "left"
-  layouts[full][regions][] = "right"
+  ; layouts[full][name] = "Full"
+  ; layouts[full][description] = "Full content"
+  ; layouts[full][template] = "page-full"
+  ; layouts[full][regions][] = "content"
+  ; layouts[full][regions][] = "left"
+  ; layouts[full][regions][] = "right"
