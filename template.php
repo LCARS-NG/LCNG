@@ -104,6 +104,15 @@ function LCNG_preprocess_page(&$vars) {
       }
     }
   }
+  
+  $status = $vars['title'];
+  switch($status){
+  case "Access denied":
+  case "Page not found";
+    $classes[] = 'page-error'; // Add error page class.
+    break;
+  }
+  
   $vars['classes'] = implode(' ', $classes); // Concatenate with spaces.
 
 }

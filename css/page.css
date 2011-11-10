@@ -27,7 +27,7 @@
 #genesis-1c .sidebar-right .content-inner{margin-right:200px;}
 #genesis-1c .two-sidebars .content-inner{margin:0 200px 0 140px;}
 #genesis-1c .two-sidebars #header .content-inner {margin:0 0 0 140px;}
-#genesis-1c #sidebar-menus {width:120px;margin-left:-100%;line-height:1em;margin-bottom: 40px;}
+#genesis-1c #sidebar-menus {width:120px;margin-left:-100%;line-height:1em;padding-bottom: 40px;}
 #genesis-1c #sidebar-left{}
 #genesis-1c #sidebar-right {width:180px;margin-left:-180px;}
 #genesis-1c .content-inner.top-panel {margin:0 0 0 140px;clear: both;}
@@ -348,9 +348,9 @@ h1#page-title {}
 #page-title {background:#A7D4FF;line-height: .8em;margin-bottom:1em; padding-left: 1.5em;}
 #page-title h2 {display:inline;background: #292929;line-height: .85em;padding: 0 5px;}
 
-.section-customerror #page-title{background:red;}
-.section-customerror #page-title h2 {color:red;}
-.section-customerror #content {color:red}
+.page-error #page-title{background:red;}
+.page-error #page-title h2 {color:red;}
+.page-error #content {color:red}
 
 /**********************************************************
  *                     Pager
@@ -405,13 +405,13 @@ margin-bottom:.5em;
  *                    customerror
  **********************************************************/
 
-.section-customerror #page-title{background:#F5173C;}
-.section-customerror #page-title h2 {color:#F5173C;}
-.section-customerror #content {color:#F5173C;text-transform:uppercase;}
-.section-customerror .lbow-topleft-bar, .section-customerror .lbow-bottomleft-bar, .section-customerror .lbow-topleft-positiv, .section-customerror .lbow-bottomleft-positiv {background-color:#F5173C;}
-.section-customerror #sidebar-menus {background-color:#F5173C !important;}
-.section-customerror #sidebar-menus ul.menu li a:visited {background-color:#F5173C;}
-
+.page-error #page-title{background:#F5173C;}
+.page-error #page-title h2 {color:#F5173C;}
+.page-error #content {color:#F5173C;text-transform:uppercase;}
+.page-error .lbow-topleft-bar, .page-error .lbow-bottomleft-bar, .page-error .lbow-topleft-positiv, .page-error .lbow-bottomleft-positiv {background-color:#F5173C;}
+.page-error #sidebar-menus {background-color:#F5173C !important;}
+.page-error #sidebar-menus ul.menu li a:visited {background-color:#F5173C;}
+.page-error h1.logo-site-name a, .page-error .logo-site-name .title, .page-error h2 {color: #F5173C;}
 
 /**********************************************************
  *                    center table
@@ -573,4 +573,6 @@ span.admin-enabled {
 }
 
 table .center #breadcrumb {padding: .5em;}
+
+
 
