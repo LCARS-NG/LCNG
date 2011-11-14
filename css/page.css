@@ -27,7 +27,7 @@
 #genesis-1c .sidebar-right .content-inner{margin-right:200px;}
 #genesis-1c .two-sidebars .content-inner{margin:0 200px 0 140px;}
 #genesis-1c .two-sidebars #header .content-inner {margin:0 0 0 140px;}
-#genesis-1c #sidebar-menus {width:120px;margin-left:-100%;line-height:1em;padding-bottom: 40px;}
+#genesis-1c #sidebar-menus {width:120px;margin-left:-100%;line-height:1em;padding-bottom: 35px;}
 #genesis-1c #sidebar-left{}
 #genesis-1c #sidebar-right {width:180px;margin-left:-180px;}
 #genesis-1c .content-inner.top-panel {margin:0 0 0 140px;clear: both;}
@@ -454,7 +454,7 @@ td.sidebar-first {}
   border-radius: 15ex;
   -webkit-border-radius: 5ex;
   -moz-border-radius: 5ex;
-  behavior: url(/sites/all/themes/LCNG/PIE.htc);   /* change path here match theme  */
+  behavior: url(/sites/all/themes/LCNG/PIE.htc);   /* change path here to match  your theme  */
 }
 
 /**********************************************************
@@ -468,15 +468,12 @@ td.sidebar-first {}
   -moz-border-radius:3ex;
   border-radius: 3ex;
   background-color: #A7D4FF;
-  background: -webkit-gradient(0 0, 0 100%, from(#A6FFFE), to(#A7D4FF));
-  background: -moz-linear-gradient(#A6FFFE, #A7D4FF);
-  -pie-background: linear-gradient(#A6FFFE, #A7D4FF);
-  behavior: url(/sites/all/themes/LCNG/PIE.htc);   /* change path here match theme  */
+  behavior: url(/sites/all/themes/LCNG/PIE.htc);   /* change path here to match  your theme  */
 }
 
 td.rounded1 {
-  padding: .5em;
-  height: 25px;
+
+  height: 35px;
 }
 
 /* lbow-topleft */
@@ -489,7 +486,7 @@ td.rounded1 {
   border-radius:39px 0 0 0;
   -webkit-border-top-left-radius: 39px;
   -moz-border-radius-topleft: 39px;
-  behavior: url(/sites/all/themes/LCNG/PIE.htc);   /* change path here match theme  */
+  behavior: url(/sites/all/themes/LCNG/PIE.htc);   /* change path here to match  your theme  */
 }
 
 .lbow-topleft-negativ {
@@ -500,7 +497,7 @@ td.rounded1 {
   border-radius:20px 0 0 0;
   -webkit-border-top-left-radius: 20px;
   -moz-border-radius-topleft: 20px;
-  behavior: url(/sites/all/themes/LCNG/PIE.htc);   /* change path here match theme  */
+  behavior: url(/sites/all/themes/LCNG/PIE.htc);   /* change path here to match  your theme  */
 }
 
 .lbow-content {padding: 10px 0 10px 20px;text-transform: uppercase;font-size: 10px;}
@@ -527,7 +524,7 @@ td.rounded1 {
   border-radius:0 0 0 39px;
   -webkit-border-bottom-left-radius: 39px;
   -moz-border-radius-bottomleft: 39px;
-  behavior: url(/sites/all/themes/LCNG/PIE.htc);   /* change path here match theme  */
+  behavior: url(/sites/all/themes/LCNG/PIE.htc);   /* change path here to match  your theme  */
 }
 
 .lbow-bottomleft-negativ {
@@ -538,7 +535,7 @@ td.rounded1 {
   border-radius:0 0 0 20px;
   -webkit-border-bottom-left-radius: 20px;
   -moz-border-radius-bottomleft: 20px;
-  behavior: url(/sites/all/themes/LCNG/PIE.htc);   /* change path here match theme  */
+  behavior: url(/sites/all/themes/LCNG/PIE.htc);   /* change path here to match  your theme  */
 }
 
 .lbow-bottomleft-bar  {
@@ -553,7 +550,7 @@ td.rounded1 {
   border-radius:3ex;
   -webkit-border-radius:3ex;
   -moz-border-radius:3ex;
-  behavior: url(/sites/all/themes/LCNG/PIE.htc);   /* change path here match theme  */
+  behavior: url(/sites/all/themes/LCNG/PIE.htc);   /* change path here to match  your theme  */
   padding: 1em !important;
   margin-bottom: .5em;
 }
