@@ -685,10 +685,11 @@ span.form-required, span.marker {
 /***********************************************************
  *                     Messages
  **********************************************************/
-.description {
+.form-item .description {
   color: #EEE;
   text-transform: none;
   padding-top: .5em;
+  font-size: 1em;
 }
 
 .section-user .account-management .description {
@@ -696,7 +697,8 @@ span.form-required, span.marker {
 }
 
 .section-user .account-management input.form-text {
-  width: 100px;
+  width: 10em;
+  padding: .35em;
 }
 
 .section-user .account-management div.error {
