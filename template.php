@@ -48,11 +48,6 @@ function LCNG_preprocess_page(&$vars) {
     $vars['template_file'] = 'page-h2panel';
   }
 
-  if (arg(0) == "admin" && !is_numeric(arg(1))) {
-    $vars['template_file'] = 'page-bars';
-  }
-
-
   // Set variables for the logo and site_name.
   if (!empty($vars['logo'])) {
     // Return the site_name even when site_name is disabled in theme settings.

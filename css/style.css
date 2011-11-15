@@ -372,7 +372,7 @@ div.views-fluid-grid h3 {
 .section-node h2{line-height:1em;}
 
 .local-tasks {
-  border-top: solid #A7D4FF;
+  border-top: solid #589DFA;
   margin-bottom: 1em;
   padding: 1em 0;
   clear: both;
@@ -658,13 +658,12 @@ table.system-status-report th {
  *                      Admin
  **********************************************************/
 div.admin-panel {
-  background: #303030;
-  border: 1px solid #242424;
+  border: 1px solid #589DFA;
+  margin-bottom: 1em;
 }
 
 .admin-panel h3 {
-  background: #242424;
-  color: #EEE;
+  padding-left: .5em;
 }
 
 .admin-panel dd {
