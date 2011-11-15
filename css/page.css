@@ -91,7 +91,7 @@ body > #container {
 /* Main content wrappers*/
 .sidebar-right #main-content {width: 100%;}
 .two-sidebars #main-content {width: 100%; float: right;}
-#content {padding-top: 1em;}
+#content {}
 
 
 /**********************************************************
@@ -137,14 +137,14 @@ body > #container {
 .three-col-33 .col-2 {}
 .three-col-33 .col-3 {}
 
-.four-col-25 {background-color: #292929; padding: 0; margin: 0;}
+.four-col-25 {background-color: #001B33; padding: 0; margin: 0;}
 .four-col-25 .col-1 {}
 .four-col-25 .col-2 {}
 .four-col-25 .col-3 {}
 .four-col-25 .col-4 {}
 
 
-.gpanel-region {padding-left: 20px; background-color: #292929;}
+.gpanel-region {padding-left: 20px; background-color: #001B33;}
 
 /**********************************************************
  *                 Header Elements
@@ -157,13 +157,13 @@ body > #container {
 .logo-site-name {text-align:right;}
 div.logo-site-name {}
 h1.logo-site-name  {line-height:25px; margin-right:25px;font-size: 2.5em;}
-h1.logo-site-name a, .logo-site-name .title {background: #292929;color:#A7D4FF;padding: 0 5px;}
+h1.logo-site-name a, .logo-site-name .title {background: #001B33;color:#A7D4FF;padding: 0 5px;}
 h1.logo-site-name a:hover, a:active {}
 /* DIV/strong combo when when title is set. */
 div.logo-site-name strong {}
 
 .h2panel h1 {line-height: 1em;}
-.h2panel h1.logo-site-name  {background: #292929; margin: 0 0 0 -1px;text-align: left;font-size: 1em;}
+.h2panel h1.logo-site-name  {background: #001B33; margin: 0 0 0 -1px;text-align: left;font-size: 1em;}
 .h2panel h1.logo-site-name a {padding: 0; letter-spacing: -1px;font-size: 1em;}
 
 /* Remove display:block if you want the site name inline with the logo. */
@@ -357,7 +357,7 @@ h1#page-title {}
   background-color: #A7D4FF;
   behavior: url(/sites/all/themes/LCNG/PIE.htc);
 }
-#page-title h2 {display:inline;background: #292929;line-height: .85em;padding: 0 5px;}
+#page-title h2 {display:inline;background: #001B33;line-height: .85em;padding: 0 .5em;}
 
 .page-error #page-title{background:red;}
 .page-error #page-title h2 {color:red;}
@@ -416,13 +416,13 @@ margin-bottom:.5em;
  *                    customerror
  **********************************************************/
 
-.page-error #page-title{background:#F5173C;}
-.page-error #page-title h2 {color:#F5173C;}
-.page-error #content {color:#F5173C;text-transform:uppercase;}
-.page-error .lbow-topleft-bar, .page-error .lbow-bottomleft-bar, .page-error .lbow-topleft-positiv, .page-error .lbow-bottomleft-positiv {background-color:#F5173C;}
-.page-error #sidebar-menus {background-color:#F5173C !important;}
-.page-error #sidebar-menus ul.menu li a:visited {background-color:#F5173C;}
-.page-error h1.logo-site-name a, .page-error .logo-site-name .title, .page-error h2 {color: #F5173C;}
+.page-error #page-title{background:#9E0E26;}
+.page-error #page-title h2 {color:#9E0E26;}
+.page-error #content {color:#9E0E26;text-transform:uppercase;}
+.page-error .lbow-topleft-bar, .page-error .lbow-bottomleft-bar, .page-error .lbow-topleft-positiv, .page-error .lbow-bottomleft-positiv {background-color:#9E0E26;}
+.page-error #sidebar-menus {background-color:#9E0E26 !important;}
+.page-error #sidebar-menus ul.menu li a:visited {background-color:#9E0E26;}
+.page-error h1.logo-site-name a, .page-error .logo-site-name .title, .page-error h2 {color: #9E0E26;}
 
 /**********************************************************
  *                    center table
@@ -503,7 +503,7 @@ td.rounded1 {
   display: block;
   width: auto;
   height: 40px;
-  background-color: #292929;
+  background-color: #001B33;
   border-radius:20px 0 0 0;
   -webkit-border-top-left-radius: 20px;
   -moz-border-radius-topleft: 20px;
@@ -541,7 +541,7 @@ td.rounded1 {
   display: block;
   width: auto;
   height: 40px;
-  background-color: #292929;
+  background-color: #001B33;
   border-radius:0 0 0 20px;
   -webkit-border-bottom-left-radius: 20px;
   -moz-border-radius-bottomleft: 20px;

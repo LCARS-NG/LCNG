@@ -6,7 +6,7 @@
 
         var windowHeight = $(window).height();
         var mainHeight = $("#content-column").outerHeight();
-        var offset = $("#header").outerHeight() + $("#foot-wrapper").outerHeight()+70;
+        var offset = $("#header").outerHeight() + $("#foot-wrapper").outerHeight()+77;
         
            if (windowHeight > mainHeight){     
             $("#sidebar-magicheight").height(windowHeight - offset);

@@ -3,15 +3,13 @@
 
 @import url(http://fonts.googleapis.com/css?family=Droid+Sans:400,700);
 
-@media screen {
-  html, body {
-    font-size:85%;
-    height:99%;
-  }
+html, body {
+  font-size:85%;
+  height:99%;
 }
 
 @media screen and (min-width: 1024px) {
-  html, body {
+    html, body.section-user {
     font-size:95%;
     height:99%;
   }
@@ -21,7 +19,7 @@
  *                    Body
  **********************************************************/
 body {
-  background: #292929;
+  background: #001B33;
   font-family:  'Droid Sans', Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 10px 10px 0;
@@ -307,8 +305,8 @@ html.js fieldset.collapsed {
 }
 
 .form-item input.error, .form-item textarea.error, .form-item select.error {
-  background-color: #F5173C;
-  border: 1px solid #F5173C;
+  background-color: #9E0E26;
+  border: 1px solid #9E0E26;
 }
 
 div.views-fluid-grid h3 {
@@ -424,7 +422,7 @@ html.js fieldset.collapsible .fieldset-wrapper {
 }
 
 .innerframeTop {
-  background-color: #292929;
+  background-color: #001B33;
   display:block;
   height:auto;
   padding:20px 0 0px 10px;
@@ -456,7 +454,7 @@ html.js fieldset.collapsible .fieldset-wrapper {
 .node {
   padding: 1em;
   clear: left;
-  background: #333;
+  background: #003B70;
   margin-bottom: 1em;
   -webkit-border-radius: 1ex;
   -moz-border-radius: 1ex;
@@ -678,7 +676,7 @@ div.admin-panel {
 }
 
 span.form-required, span.marker {
-  color: #F5173C;
+  color: #9E0E26;
   text-transform: uppercase;
 }
 
@@ -706,11 +704,11 @@ span.form-required, span.marker {
 }
 
 div.error {
-  background-color: #F5173C;
+  background-color: #9E0E26;
   border: none;
-  color: #333;
+  color: #EEE;
   text-transform: uppercase;
-  background: #F5173C;
+  background: #9E0E26;
   padding: 1em 1em;
 }
 
@@ -744,7 +742,10 @@ div.help {
   -moz-border-radius:3ex;
   behavior: url(/sites/all/themes/LCNG/PIE.htc);   /* change path here match theme  */
   padding: 1em;
+  margin-bottom: 1em;
 }
+
+div.help p {margin: 0;}
 
 div.warning {
   background-color: orange;
@@ -904,7 +905,7 @@ ul.secondary {
  *                        Forms
  **********************************************************/
 fieldset {
-  background-color: #292929;
+  background-color: #001B33;
   border: none;
   margin: 0;
   padding-left: 0;
@@ -918,6 +919,7 @@ input.title {
   background-color: #A7D4FF;
   border: none;
   color: black;
+  padding: 0.5em;
 }
 
 input.form-text:focus,
@@ -1296,14 +1298,14 @@ div.block div.block-edit {
 
 /* High specifity selectors to style blocks in one sidebar. */
 #sidebar-menus .block {margin:0;}
-#sidebar-menus .block-title {font-weight:bold; border-bottom: 4px solid #292929; color: black; background: #A7D4FF;padding: 15px 5px 3px 0;} /* block title */
+#sidebar-menus .block-title {font-weight:bold; border-bottom: 4px solid #001B33; color: black; background: #A7D4FF;padding: 15px 5px 3px 0;} /* block title */
 #sidebar-menus .block input {width:80px;}
 #sidebar-menus .block input.form-text {background:#A7D4FF;}
 
 #sidebar-menus ul.menu a {color:black;display:block;padding:15px 5px 3px 0;text-align:right;font-weight:bold;font-size: 1em;}
-#sidebar-menus ul.menu li.collapsed  {list-style-type:none;margin:0;border-bottom:4px solid #292929;}
-#sidebar-menus ul.menu li.expanded a {border-bottom:4px solid #292929;}
-#sidebar-menus ul.menu li.leaf {list-style-type:none;margin:0; border-bottom:4px solid #292929;}
+#sidebar-menus ul.menu li.collapsed  {list-style-type:none;margin:0;border-bottom:4px solid #001B33;}
+#sidebar-menus ul.menu li.expanded a {border-bottom:4px solid #001B33;}
+#sidebar-menus ul.menu li.leaf {list-style-type:none;margin:0; border-bottom:4px solid #001B33;}
 #sidebar-menus ul.menu li ul > li.leaf {background:#6257fa;}
 #sidebar-menus ul.menu li {margin: 0;}
 #sidebar-menus ul.menu li a:link {color:black; background-color: #3786FF;}
@@ -1318,7 +1320,7 @@ div.block div.block-edit {
   background-color: #FFD068;
   list-style-type: none;
   margin: 0;
-  border-bottom: 4px solid #292929;
+  border-bottom: 4px solid #001B33;
   color: black;
   display: block;
   padding: 15px 5px 3px 0;
