@@ -345,7 +345,18 @@ fieldset #search-advanced {}
 /* The main title on each page. */
 h1#page-title {}
 
-#page-title {background:#A7D4FF;line-height: .8em;margin-bottom:1em; padding-left: 1.5em;}
+#page-title {
+  background:#A7D4FF;
+  line-height: .8em;
+  margin-bottom:1em;
+  padding-left: 1.5em;
+
+  -webkit-border-radius: 3ex;
+  -moz-border-radius: 3ex;
+  border-radius: 3ex;
+  background-color: #A7D4FF;
+  behavior: url(/sites/all/themes/LCNG/PIE.htc);
+}
 #page-title h2 {display:inline;background: #292929;line-height: .85em;padding: 0 5px;}
 
 .page-error #page-title{background:red;}
