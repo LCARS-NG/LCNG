@@ -164,6 +164,8 @@
             <?php if ($sidebar_topmenus): ?><?php print $sidebar_topmenus; ?><?php endif; ?>
           </div>
         </div> <!-- /sidebar-menus -->
+        
+        <div class="sidebar-bg">&nbsp;</div>
 
       </div> <!-- /columns-inner -->
 

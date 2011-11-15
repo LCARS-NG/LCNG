@@ -3,10 +3,18 @@
 
 @import url(http://fonts.googleapis.com/css?family=Droid+Sans:400,700);
 
-html, body {
-  font-size:85%;
-  height:99%;
+@media screen {
+  html, body {
+    font-size:85%;
+    height:99%;
+  }
+}
 
+@media screen and (min-width: 1024px) {
+  html, body {
+    font-size:95%;
+    height:99%;
+  }
 }
 
 /**********************************************************
@@ -908,7 +916,6 @@ input.title {
   background-color: #A7D4FF;
   border: none;
   color: black;
-  padding: .2em 1em;
 }
 
 input.form-text:focus,
@@ -950,6 +957,7 @@ li.leaf,
 li.collapsed,
 li.expanded {
   list-style-image:  none;
+  list-style-type: none;
   color: #777;
 }
 
@@ -1296,10 +1304,10 @@ div.block div.block-edit {
 #sidebar-menus ul.menu li.leaf {list-style-type:none;margin:0; border-bottom:4px solid #292929;}
 #sidebar-menus ul.menu li ul > li.leaf {background:#6257fa;}
 #sidebar-menus ul.menu li {margin: 0;}
-#sidebar-menus ul.menu li a:link {color:black;}
+#sidebar-menus ul.menu li a:link {color:black; background-color: #3786FF;}
 #sidebar-menus ul.menu li a:hover {background-color:#A7D4FF;color:black;}
 #sidebar-menus ul.menu li a:visited {text-decoration:none;}
-#sidebar-menus ul.menu li a.active {background-color:#A7D4FF;color:black;}
+#sidebar-menus ul.menu li a.active {background-color:white;color:black;}
 #sidebar-menus li.expanded ul.menu li {border:none;}
 
 #sidebar-right .block {font-size: .9em; margin: 0 0 1.5em;}

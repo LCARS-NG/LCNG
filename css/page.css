@@ -186,7 +186,7 @@ div.logo-site-name strong {}
   text-transform: uppercase;
   padding-bottom: 1em;
   font-weight: normal;
-  font-size: 10px;
+  font-size: 1em;
 }
 
 
@@ -472,8 +472,7 @@ td.sidebar-first {}
 }
 
 td.rounded1 {
-
-  height: 35px;
+  height: 6ex;
 }
 
 /* lbow-topleft */
@@ -483,7 +482,7 @@ td.rounded1 {
   background-color: #A7D4FF;
   padding: 0 0 0 120px;
   margin: 4px 0;
-  border-radius:39px 0 0 0;
+  border-radius: 39px 0 0 0;
   -webkit-border-top-left-radius: 39px;
   -moz-border-radius-topleft: 39px;
   behavior: url(/sites/all/themes/LCNG/PIE.htc);   /* change path here to match  your theme  */

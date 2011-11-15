@@ -102,7 +102,7 @@
     <table class="center">
       <tbody>
         <tr>
-          <td class="top ibar-height rounded1"> <!-- /topbar --></td>
+          <td class="top rounded1"> <!-- /topbar --></td>
         </tr>
         <tr>
           <td class="center">
@@ -138,7 +138,7 @@ print drupal_get_form('user_login_block');
           </td>
         </tr>
         <tr>
-          <td class="bottom ibar-height rounded1"> <!-- /bottombar --> </td>
+          <td class="bottom rounded1"> <!-- /bottombar --> </td>
         </tr>
       </tbody>
     </table>
