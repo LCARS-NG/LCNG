@@ -8,8 +8,8 @@ html, body {
   height:99%;
 }
 
-@media screen and (min-width: 1024px) {
-    html, body.section-user {
+@media screen and (min-width: 960px) {
+    html.section-user, body.section-user {
     font-size:95%;
     height:99%;
   }
@@ -20,10 +20,10 @@ html, body {
  **********************************************************/
 body {
   background: #001B33;
-  font-family:  'Droid Sans', Arial, Helvetica, sans-serif;
+  font-family: 'Droid Sans', Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 10px 10px 0;
-  color: #CCC;
+  color: #DDD;
   border: none;
   line-height: 1.5em;
   overflow-y: scroll;
@@ -478,9 +478,13 @@ html.js fieldset.collapsible .fieldset-wrapper {
 }
 
 /* Node content wrapper. */
-.node-content {font-size: 1em; width: 100%;padding-bottom: .5em;}
+.node-content {font-size: 1.2em; line-height: 1.3em;  width: 100%;padding-bottom: .5em;}
 .node-type-sheetnode .node-content, .page-node-edit .resizable-textarea {width: 100%;}
 .page-node-add .resizable-textarea {width: 99.5%;}
+
+@media screen and (min-width: 1280px) {
+  .node-content {font-size: 1.3em; line-height: 1.5em;}
+}
 
 /* User Picture. */
 .node .user-picture {}
@@ -918,7 +922,7 @@ input.title {
   background-color: #A7D4FF;
   border: none;
   color: black;
-  padding: 0.5em;
+  padding: 0.25em;
 }
 
 input.form-text:focus,
@@ -1345,11 +1349,4 @@ ul.menu ul ul ul {
 /* Menu li styles */
 ul.menu li {padding:0;margin:0 0 0 1em;}
 ul.menu li.leaf       {list-style-type: none;margin: 0;}
-
-/**********************************************************
- *                   Block item-list
- **********************************************************/
-
-
-
 
