@@ -5,15 +5,6 @@
  */
 
 /**
- * USAGE
- * 1. Rename each function to match your DARKs name,
- *    e.g. if you name your theme genesis_foo then the function
- *    name will be "genesis_foo_preprocess".
- * 2. Uncomment the required fucntion to use. You can delete the
- *    "sample_variable".
- */
-
-/**
  * Override or insert variables into all templates.
  *
  * @param $vars
