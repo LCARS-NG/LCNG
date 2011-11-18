@@ -81,6 +81,11 @@ body > #container {
 }
 
 /* Column wrappers */
+
+/* set 1px backgound image workaround to fill the left sidebar dynamically
+   @todo: a solution with a div container
+*/
+
 #columns {margin-bottom:0;background:url(1px.png) repeat-y 0 50%; width: 100%;}
 .columns-inner {}
 
@@ -101,51 +106,16 @@ body > #container {
  *                      Sidebars
  **********************************************************/
 /* Target both sidebars with this low specifity selector. */
-.sidebar {}
-.sidebar a:link    {}
-.sidebar a:visited {}
-.sidebar a:hover   {}
-.sidebar a:focus   {}
-.sidebar a:active  {}
-
-.sidebar-inner {}
 
 #sidebar-menus a:link {color: black;}
 #sidebar-menus a:active {color: black;}
 #sidebar-menus a:visited {color: black;}
 
-/* Target a specific sidebar, inner or sidebar-inner. */
-#sidebar-menus {}
-#sidebar-menus .sidebar-inner {}
-
-#sidebar-right {}
-#sidebar-right .sidebar-inner {}
-
 /*********************************************************
 *                     GPanel Regions
 **********************************************************/
-.two-col-50 {}
-.two-col-50 .col-1 {}
-.two-col-50 .col-2 {}
-
-.two-col-50.with-nested {}
-#two-col-50-nested {}
-.two-col-50.with-nested .col-1 {}
-.two-col-50.with-nested .col-2 {}
-.two-col-50.with-nested #two-col-50-nested .col-1 {}
-.two-col-50.with-nested #two-col-50-nested .col-2 {}
-
-.three-col-33 {}
-.three-col-33 .col-1 {}
-.three-col-33 .col-2 {}
-.three-col-33 .col-3 {}
 
 .four-col-25 {background-color: #001B33; padding: 0; margin: 0;}
-.four-col-25 .col-1 {}
-.four-col-25 .col-2 {}
-.four-col-25 .col-3 {}
-.four-col-25 .col-4 {}
-
 
 .gpanel-region {padding-left: 20px; background-color: #001B33;}
 
@@ -158,12 +128,11 @@ body > #container {
 
 /* Logo and site_name wrapper. */
 .logo-site-name {text-align:right;}
-div.logo-site-name {}
+
 h1.logo-site-name  {line-height:25px; margin-right:25px;font-size: 2.5em;}
 h1.logo-site-name a, .logo-site-name .title {background: #001B33;color:#A7D4FF;padding: 0 5px;}
 h1.logo-site-name a:hover, a:active {}
 /* DIV/strong combo when when title is set. */
-div.logo-site-name strong {}
 
 .h2panel h1 {line-height: 1em;}
 .h2panel h1.logo-site-name  {background: #001B33; margin: 0 0 0 -1px;text-align: left;font-size: 1em;}
@@ -176,13 +145,6 @@ div.logo-site-name strong {}
 /* Logo. */
 #logo {padding-bottom: 1em;}
 .h2panel #logo {float:right;padding-right: 1em;}
-
-/* Override default pseudo class styles. */
-#site-name a:link    {}
-#site-name a:visited {}
-#site-name a:hover   {}
-#site-name a:focus   {}
-#site-name a:active  {}
 
 /* Site slogan. */
 #site-slogan {
@@ -226,13 +188,6 @@ div.logo-site-name strong {}
 #search-form .form-item {}
 #search-form .form-submit {}
 
-/* Override forms.css text field focus style. */
-#search-form #edit-keys-wrapper input:hover,
-#search-form #edit-keys-wrapper input:focus {}
-
-/* Advanced search fieldset. */
-fieldset #search-advanced {}
-
 /**********************************************************
  *               Primary & Secondary Links
  **********************************************************/
@@ -262,7 +217,6 @@ fieldset #search-advanced {}
  * Primary Links Style
  * Example styles to get you started.
  */
-#primary {}
 
 #nav .primary-links {
   background: #222; /* Default gray for dev only. */
@@ -296,7 +250,6 @@ fieldset #search-advanced {}
 /**
  * Secondary Links Style
  */
-#secondary {}
 
 #nav .secondary-links {
   background: #333; /* Default gray for dev only. */
@@ -385,9 +338,6 @@ h1#page-title {}
 
 #footer-message {float: right;}
 
-#footer a,
-#footer-message a {}
-
 
 /**********************************************************
  *                 RSS Feed Icon
@@ -406,7 +356,6 @@ h1#page-title {}
 .block-apachesolr .block-inner {
   font-size: .8em;
 }
-
 
 #content .block-title {
 background:none;
@@ -558,6 +507,11 @@ td.rounded1 {
 .h2panel .lbow-bottomleft-bar  {
   height: 15px;
 }
+
+
+/**********************************************************
+ *      other style overides
+ **********************************************************/
 
 .messages {
   border-radius:3ex;
