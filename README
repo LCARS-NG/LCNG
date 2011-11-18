@@ -3,9 +3,9 @@ LCNG is a LCARS-NG theme for Drupal 6 by G. Nguyen. It's originally based on the
 LCARS-NG is an acronym for "LIBRARY COMPUTER ACCESS/RETRIEVAL SYSTEM – NEXT GENERATION"
 
 FEATURES
-- CSS3 rounded-corners with CSS3PIE for optimal curves on Firefox, Chrome and Internet Exlorer.
+- CSS rounded-corners with CSS3PIE for optimal curves on Firefox, Chrome and Internet Explorer.
 - fluid layouts
-- dynamically fullwindow bars and L-bows with auto height if content fits window height
+- dynamically fullwindow frame-bars with auto height if content fits window height
 - different layouts for optimal content display
 - context layouts
 - support drupal menusystem in sidebar-menus
@@ -13,13 +13,16 @@ FEATURES
 - user login page
 
 INSTALL
-- Just download the project archive and extract all files in the Drupal theme folder "/sites/all/themes/LCNG".
+- Download the project archive and extract the folder "LCNG" in the drupal themes folder "/sites/all/themes/".
 
 HELP
 The frontpage of this theme is a user login page to access LCARS-NG by design. You can add a link to a custom frontpage for public users in the template file "page-front-anonymous.tpl.php".
 
+TIP
+Use the browser zoom function to scale the content to fit your screen size. In the future LCNG will optimize for different screen size.
+
 SCREENSHOT
 http://www.screenshots.cc/original/51212/d85as
 
-DEMO
+LIVE-DEMO
 http://t2.lcars-ng.net/
