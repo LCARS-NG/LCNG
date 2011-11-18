@@ -23,7 +23,7 @@ body {
   font-family: 'Droid Sans', Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 10px 10px 0;
-  color: #DDD;
+  color: #FEFEFE;
   border: none;
   line-height: 1.5em;
   overflow-y: scroll;
@@ -84,7 +84,7 @@ h2 {font-size: 2em;}
 
 p {margin: 0 0 .5em;}
 
-dd {text-transform: uppercase;}
+dd {}
 
 pre, code, tt {}
 p code {}
@@ -483,10 +483,6 @@ html.js fieldset.collapsible .fieldset-wrapper {
 .node-type-sheetnode .node-content, .page-node-edit .resizable-textarea {width: 100%;}
 .page-node-add .resizable-textarea {width: 99.5%;}
 
-@media screen and (min-width: 1280px) {
-  .node-content {font-size: 1.3em; line-height: 1.5em;}
-}
-
 /* User Picture. */
 .node .user-picture {}
 .node .user-picture img {}
@@ -738,9 +734,8 @@ div.status {
 div.help {
   background-color: #589DFA;
   background-size: 24px;
-  color: #333;
+  color: #000;
   border: none;
-  text-transform: uppercase;
   border-radius: 3ex;
   -webkit-border-radius:3ex;
   -moz-border-radius:3ex;
@@ -805,7 +800,7 @@ table.system-status-report a:link,
 table.system-status-report a:visited,
 table.update a:link,
 table.update a:visited {
-  color: yellow;
+  color: green;
   text-decoration: none;
 }
 
@@ -813,7 +808,7 @@ table.system-status-report a:hover,
 table.system-status-report a:focus,
 table.update a:hover,
 table.update a:focus {
-  color: yellow;
+  color: green;
   text-decoration: underline;
 }
 

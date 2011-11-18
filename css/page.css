@@ -91,8 +91,11 @@ body > #container {
 /* Main content wrappers*/
 .sidebar-right #main-content {width: 100%;}
 .two-sidebars #main-content {width: 100%; float: right;}
-#content {}
 
+@media screen and (min-width: 1024px) {
+    #content {font-size: 1.15em;}
+  }
+}
 
 /**********************************************************
  *                      Sidebars
@@ -357,7 +360,7 @@ h1#page-title {}
   background-color: #A7D4FF;
   behavior: url(/sites/all/themes/LCNG/PIE.htc);
 }
-#page-title h2 {display:inline;background: #001B33;line-height: .85em;padding: 0 .5em;}
+#page-title h2 {display:inline;background: #001B33;line-height: .85em;padding: 0 .3em;}
 
 .page-error #page-title{background:red;}
 .page-error #page-title h2 {color:red;}
@@ -587,3 +590,4 @@ div.admin .left {
 
 #main-content h2 {padding-bottom: .5em;}
 
+.page-admin-build-themes .screenshot {padding-right:1em;}
