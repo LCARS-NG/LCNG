@@ -151,7 +151,7 @@ h1.logo-site-name a:hover, a:active {}
   text-transform: uppercase;
   padding-bottom: 1em;
   font-weight: normal;
-  font-size: 1em;
+  font-size: x-small;
 }
 
 
@@ -302,7 +302,6 @@ h1.logo-site-name a:hover, a:active {}
 h1#page-title {}
 
 #page-title {
-  background:#A7D4FF;
   line-height: .8em;
   margin-bottom: 2em;
   padding-left: 1.5em;
@@ -310,7 +309,7 @@ h1#page-title {}
   -webkit-border-radius: 3ex;
   -moz-border-radius: 3ex;
   border-radius: 3ex;
-  background-color: #A7D4FF;
+  background-color: #FFD068;
   behavior: url(/sites/all/themes/LCNG/PIE.htc);
 }
 #page-title h2 {display:inline;background: #001B33;line-height: .85em;padding: 0 .3em;}

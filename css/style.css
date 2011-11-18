@@ -82,7 +82,7 @@ h1 {
 }
 h2 {font-size: 2em;}
 
-p {margin: 0 0 .5em;}
+p {margin: 0 0 .5em;line-height: 1.5em;}
 
 dd {}
 
@@ -394,7 +394,7 @@ html.js .resizable-textarea textarea {
   clear:left;
 }
 
-#page-title h2 {color: #A7D4FF;}
+#page-title h2 {color: #FFD068;}
 
 #system-charts {
   background: white;
