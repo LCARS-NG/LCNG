@@ -61,7 +61,6 @@
 ;----------// jQuery Plugins and JavaScripts
 
   scripts[] = js/lcng.magicheight.js
-  ; scripts[] = js/curvycorners.js
 
   ; Equal Height Columns
   ; This will set first child divs in the #columns division
@@ -75,7 +74,7 @@
   ;scripts[] = js/preloadCssImages.jQuery_v5_minfied.js
 
   ; Insert WAI ARIA Landmark Roles. Uncomment to use.
-  scripts[] = js/aria-roles.js
+  ; scripts[] = js/aria-roles.js
 
 ;----------// Features
 
