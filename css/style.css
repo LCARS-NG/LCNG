@@ -5,13 +5,12 @@
 
 html, body {
   font-size:85%;
-  height:99%;
+  height:98%;
 }
 
 @media screen and (min-width: 960px) {
     html.section-user, body.section-user {
     font-size:95%;
-    height:99%;
   }
 }
 
@@ -22,7 +21,7 @@ body {
   background: #001B33;
   font-family: 'Droid Sans', Arial, Helvetica, sans-serif;
   margin: 0;
-  padding: 1em 1em 0;
+  padding: 1em 1em;
   color: #FEFEFE;
   border: none;
   line-height: 1.5em;

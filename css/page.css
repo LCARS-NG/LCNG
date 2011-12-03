@@ -357,10 +357,10 @@ h1#page-title {}
 }
 
 #content .block-title {
-background:none;
-color:#A7D4FF;
-padding:0;
-margin-bottom:.5em;
+  background:none;
+  color:#A7D4FF;
+  padding:0;
+  margin-bottom:.5em;
 }
 
 /**********************************************************
@@ -380,9 +380,8 @@ margin-bottom:.5em;
  **********************************************************/
  
 table.center {
-  height:101%;
+  height:100%;
   width:100%;
-  padding-bottom: 15px;
 }
 
 td.center {
