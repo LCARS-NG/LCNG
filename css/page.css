@@ -380,8 +380,9 @@ margin-bottom:.5em;
  **********************************************************/
  
 table.center {
-  height:97%;
+  height:101%;
   width:100%;
+  padding-bottom: 15px;
 }
 
 td.center {
